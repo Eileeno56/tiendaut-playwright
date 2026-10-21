@@ -1,0 +1,24 @@
+{
+  "repositorio": "https://github.com/Eileeno56/tiendaut-playwright",
+  "run_url": "https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242",
+  "run_id": 39695106242,
+  "conclusion": "success",
+  "commit": "f0718f596b5f21aef5662ce94bb8b27965e4381c",
+  "artifact_id": 12390199476,
+  "artifact_name": "playwright-report",
+  "artifact_bytes": 458219,
+  "stats": {
+    "startTime": "2026-10-21T23:43:18.222Z",
+    "duration": 287342.303,
+    "expected": 345,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "fecha_verificacion": "2026-10-21",
+  "proteccion_rama": {
+    "activada": false,
+    "http": 403,
+    "motivo": "Upgrade to GitHub Pro or make this repository public to enable this feature."
+  }
+}

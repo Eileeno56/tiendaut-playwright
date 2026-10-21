@@ -1,0 +1,121 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 119550460346,
+      "run_id": 39695106242,
+      "workflow_name": "Playwright Tests",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/Eileeno56/tiendaut-playwright/actions/runs/39695106242",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVS1vIc8AAAAb1cNBug",
+      "head_sha": "f0718f596b5f21aef5662ce94bb8b27965e4381c",
+      "url": "https://api.github.com/repos/Eileeno56/tiendaut-playwright/actions/jobs/119550460346",
+      "html_url": "https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242/job/119550460346",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-21T23:42:10Z",
+      "started_at": "2026-10-21T23:42:13Z",
+      "completed_at": "2026-10-21T23:48:10Z",
+      "name": "test",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-21T23:42:14Z",
+          "completed_at": "2026-10-21T23:42:15Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-21T23:42:15Z",
+          "completed_at": "2026-10-21T23:42:17Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-21T23:42:17Z",
+          "completed_at": "2026-10-21T23:42:18Z"
+        },
+        {
+          "name": "Install dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-21T23:42:18Z",
+          "completed_at": "2026-10-21T23:42:20Z"
+        },
+        {
+          "name": "Lint (análisis estático de las pruebas)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-21T23:42:20Z",
+          "completed_at": "2026-10-21T23:42:21Z"
+        },
+        {
+          "name": "Install Playwright Browsers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-21T23:42:21Z",
+          "completed_at": "2026-10-21T23:43:17Z"
+        },
+        {
+          "name": "Run Playwright tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-21T23:43:17Z",
+          "completed_at": "2026-10-21T23:48:05Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-21T23:48:05Z",
+          "completed_at": "2026-10-21T23:48:07Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-21T23:48:07Z",
+          "completed_at": "2026-10-21T23:48:08Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-21T23:48:08Z",
+          "completed_at": "2026-10-21T23:48:08Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-21T23:48:08Z",
+          "completed_at": "2026-10-21T23:48:08Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Eileeno56/tiendaut-playwright/check-runs/119550460346",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000020,
+      "runner_name": "GitHub Actions 1000000020",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

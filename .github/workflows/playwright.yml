@@ -21,8 +21,8 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      # --update-snapshots=missing: si no existe la imagen de referencia de Linux, la crea en lugar de fallar
-      run: npm run test:estabilidad -- --update-snapshots=missing
+      # Referencias Linux revisadas e incluidas: comparar sin regenerarlas.
+      run: npm run test:estabilidad -- --update-snapshots=none
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

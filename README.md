@@ -1,3 +1,7 @@
+# Estado GitHub actualizado el 21 de octubre de 2026
+
+Repositorio y Actions verificados: [Eileeno56/tiendaut-playwright](https://github.com/Eileeno56/tiendaut-playwright).
+
 # Playwright - dos prácticas con evidencias
 
 ## Documentos principales
@@ -44,8 +48,8 @@ npx playwright show-report evidencias/capturas/reporte
 
 ## Requisitos externos pendientes
 
-Falta acceso a una cuenta GitHub para publicar un repositorio, comprobar Actions en verde, descargar el artefacto y configurar la protección de rama. El YAML queda preparado; no se simularon capturas de GitHub. Las instrucciones están en documentacion/GITHUB.md.
+GitHub ya está verificado: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242 terminó en verde con 345/345. El artefacto se publicó, descargó y verificó; evidencia en evidencias/github y documentacion/GITHUB.md. Repositorio privado: https://github.com/Eileeno56/tiendaut-playwright. El docente necesita acceso. La protección de rama no pudo activarse por la limitación del plan (HTTP 403).
 
 La guía exige un mini-proyecto del equipo para la Práctica 2. Solo se recibió TiendaUT: la Práctica 2 se aplica y documenta sobre este proyecto. Si el profesor exige otro sistema del equipo, deberá aplicarse a ese sistema. La Práctica 3 pide un sistema integrador y requisitos del cliente que no se proporcionaron; no se declara realizada y no es una de las dos prácticas documentadas.
 
-Las referencias visuales Windows se revisaron. Linux genera las ausentes según la política del ZIP; revisar y aprobar esas imágenes antes de exigir comparación estricta en CI. El margen de aserciones es 20 segundos, justificado en la bitácora tras investigar dos fallos de espera en Firefox.
+Las referencias visuales Windows se revisaron. Las tres referencias Linux se revisaron, incorporaron y el workflow compara con --update-snapshots=none. El margen de aserciones es 20 segundos, justificado en la bitácora tras investigar dos fallos de espera en Firefox.

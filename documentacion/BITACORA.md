@@ -174,3 +174,8 @@ Laboratorio original: 8 fallos previstos. Suite original aislada con las tres pr
 - Corrección: usar teclado para activar la presentación y repetir las ocho capturas.
 - Evidencia original: evidencias/capturas-intento-visor; resultado posterior: evidencias/capturas/resumen.json.
 - Suite de aceptación ampliada: 345/345, sin fallos ni reintentos.
+
+
+## Verificación remota - 21 de octubre de 2026
+
+GitHub Actions pasó 345/345; instalación, lint y subida de artefacto terminaron correctamente. Reporte y logs descargados en evidencias/github. La protección de main devolvió 403 por el plan del repositorio privado; no se declara activada. Las referencias Linux se revisaron y se incorporaron para comparaciones estrictas posteriores.

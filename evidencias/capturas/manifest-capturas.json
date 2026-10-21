@@ -83,5 +83,10 @@
     "archivo": "evidencias/capturas/imagenes/17-estabilidad-345.png",
     "sha256": "755a573e0d30c7b4e3d7215003bfdb5576af60e3df9cb08663f4bddda577c0c2",
     "bytes": 128983
+  },
+  {
+    "archivo": "evidencias/capturas/imagenes/18-github-linux.png",
+    "sha256": "5b5b86ed1bb5412b395e47d0865d5bc45904215dbef028cdd0ab097b1db16a40",
+    "bytes": 129069
   }
 ]

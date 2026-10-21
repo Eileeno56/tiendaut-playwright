@@ -32,11 +32,15 @@ async function capturar(browser, nombre, carpeta, esperado, puerto) {
   await fs.mkdir('evidencias/capturas/imagenes', { recursive: true });
   const browser = await chromium.launch();
   try {
+    if (process.argv.includes('--github')) {
+      await capturar(browser, '18-github-linux', 'evidencias/github/artefacto/playwright-report', 'Passed', 9339);
+    } else {
     await capturar(browser, '08-laboratorio-original', 'evidencias/laboratorio-original/reporte', 'Failed', 9334);
     await capturar(browser, '09-suite-original', 'evidencias/suite-original/reporte', 'Failed', 9335);
     await capturar(browser, '10-estabilidad-315', 'evidencias/estabilidad/reporte', 'Passed', 9336);
     await capturar(browser, '11-pruebas-de-evidencia', 'evidencias/capturas/reporte', 'Passed', 9337);
     await capturar(browser, '17-estabilidad-345', 'evidencias/estabilidad-ampliada/reporte', 'Passed', 9338);
+    }
     console.log('Capturas tomadas de los reportes HTML reales.');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

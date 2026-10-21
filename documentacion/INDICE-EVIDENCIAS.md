@@ -140,3 +140,11 @@ Rutas relativas a este documento. Abrir los reportes con npx playwright show-rep
 - [API: productos reales](../evidencias/capturas/productos.json)
 - [Captura: errores JavaScript](../evidencias/capturas/errores-javascript.json)
 - [ENV4: intento de visor](../evidencias/capturas-intento-visor/ejecucion.log)
+
+
+## GitHub verificado el 21 de octubre
+
+- [Datos de verificación y estado](../evidencias/github/verificacion.json)
+- [Reporte descargado de GitHub](../evidencias/github/artefacto/playwright-report/index.html)
+- [JSON original de resultados remotos](../evidencias/github/artefacto/test-results/resumen.json)
+- [Captura real del reporte Linux](../evidencias/capturas/imagenes/18-github-linux.png)

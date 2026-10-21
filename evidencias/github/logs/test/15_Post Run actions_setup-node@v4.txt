@@ -1,0 +1,7 @@
+﻿2026-10-21T23:48:07.0809480Z Post job cleanup.
+2026-10-21T23:48:07.2093872Z (node:18341) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-21T23:48:07.2095472Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-21T23:48:07.2441813Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/tiendaut-playwright/tiendaut-playwright --files-from manifest.txt --use-compress-program zstdmt
+2026-10-21T23:48:07.5527091Z (node:18341) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-21T23:48:08.2038528Z Sent 12667508 of 12667508 (100.0%), 18.3 MBs/sec
+2026-10-21T23:48:08.4475041Z Cache saved with the key: node-cache-Linux-x64-npm-deb0c012031a1d024f1e0a46890654ea6c8822b59bcd3347eb695f4309b55cce

@@ -1,3 +1,5 @@
+> Actualización del 21 de octubre de 2026: el repositorio ya está publicado, Actions pasó 345/345 y el artefacto se descargó. Ver [GITHUB.md](GITHUB.md). Las menciones de GitHub pendiente más abajo corresponden al estado de la entrega inicial. La protección de rama sigue limitada por el plan privado.
+
 # Revisión del documento y del alcance solicitado
 
 La guía tiene 57 páginas. El capítulo 19 (páginas 53-54) define tres prácticas distintas; los capítulos anteriores explican cómo realizar las pruebas y el Anexo B pide la bitácora.

@@ -1,0 +1,29 @@
+﻿2026-10-21T23:48:05.7530707Z ##[group]Run actions/upload-artifact@v4
+2026-10-21T23:48:05.7531009Z with:
+2026-10-21T23:48:05.7531222Z   name: playwright-report
+2026-10-21T23:48:05.7531596Z   path: playwright-report/
+test-results/
+tests/red-y-visual.spec.ts-snapshots/
+
+2026-10-21T23:48:05.7531978Z   retention-days: 30
+2026-10-21T23:48:05.7532198Z   if-no-files-found: warn
+2026-10-21T23:48:05.7532455Z   compression-level: 6
+2026-10-21T23:48:05.7532666Z   overwrite: false
+2026-10-21T23:48:05.7532879Z   include-hidden-files: false
+2026-10-21T23:48:05.7533111Z ##[endgroup]
+2026-10-21T23:48:05.9194768Z (node:18328) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-21T23:48:05.9196238Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-21T23:48:05.9597788Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-21T23:48:05.9601301Z The least common ancestor is /home/runner/work/tiendaut-playwright/tiendaut-playwright. This will be the root directory of the artifact
+2026-10-21T23:48:05.9602582Z With the provided path, there will be 14 files uploaded
+2026-10-21T23:48:05.9603601Z Artifact name is valid!
+2026-10-21T23:48:05.9604098Z Root directory input is valid!
+2026-10-21T23:48:06.2758703Z Beginning upload of artifact content to blob storage
+2026-10-21T23:48:06.3445073Z (node:18328) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-21T23:48:06.5886448Z Uploaded bytes 458219
+2026-10-21T23:48:06.6257468Z Finished uploading artifact content to blob storage!
+2026-10-21T23:48:06.6258730Z SHA256 digest of uploaded artifact zip is ae5f6794b5f695e8834efa9bc0f02a4dc73fcfa172f30a85974bfa6cf1005d19
+2026-10-21T23:48:06.6260815Z Finalizing artifact upload
+2026-10-21T23:48:07.0621201Z Artifact playwright-report.zip successfully finalized. Artifact ID 12390199476
+2026-10-21T23:48:07.0622554Z Artifact playwright-report has been successfully uploaded! Final size is 458219 bytes. Artifact ID is 12390199476
+2026-10-21T23:48:07.0628738Z Artifact download URL: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242/artifacts/12390199476

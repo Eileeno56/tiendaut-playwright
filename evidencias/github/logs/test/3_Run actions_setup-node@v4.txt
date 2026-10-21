@@ -1,0 +1,19 @@
+﻿2026-10-21T23:42:17.1018775Z ##[group]Run actions/setup-node@v4
+2026-10-21T23:42:17.1019254Z with:
+2026-10-21T23:42:17.1020078Z   node-version: 24
+2026-10-21T23:42:17.1020479Z   cache: npm
+2026-10-21T23:42:17.1020816Z   always-auth: false
+2026-10-21T23:42:17.1021190Z   check-latest: false
+2026-10-21T23:42:17.1023869Z   token: ***
+2026-10-21T23:42:17.1024201Z ##[endgroup]
+2026-10-21T23:42:17.2491107Z Found in cache @ /opt/hostedtoolcache/node/24.22.0/x64
+2026-10-21T23:42:17.2492486Z (node:2096) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-21T23:42:17.2496207Z ##[group]Environment details
+2026-10-21T23:42:17.2501136Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-21T23:42:17.8381507Z node: v24.22.0
+2026-10-21T23:42:17.8407395Z npm: 11.19.1
+2026-10-21T23:42:17.8417482Z yarn: 1.22.22
+2026-10-21T23:42:17.8419104Z ##[endgroup]
+2026-10-21T23:42:17.8496383Z [command]/opt/hostedtoolcache/node/24.22.0/x64/bin/npm config get cache
+2026-10-21T23:42:18.0163127Z /home/runner/.npm
+2026-10-21T23:42:18.1579305Z npm cache is not found

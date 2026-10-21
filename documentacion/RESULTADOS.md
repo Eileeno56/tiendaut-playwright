@@ -1,3 +1,5 @@
+> Actualización del 21 de octubre de 2026: el repositorio ya está publicado, Actions pasó 345/345 y el artefacto se descargó. Ver [GITHUB.md](GITHUB.md). Las menciones de GitHub pendiente más abajo corresponden al estado de la entrega inicial. La protección de rama sigue limitada por el plan privado.
+
 # Resultados comprobados
 
 Fecha: 15 de octubre de 2026 (America/Mexico_City). Windows; Node 24.18.0; Playwright 1.64.1; axe 4.14.0.

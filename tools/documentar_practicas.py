@@ -49,6 +49,7 @@ def img(filename,caption,width=475):
   '08-laboratorio-original.png':(220,0,1010,650),
   '09-suite-original.png':(220,0,1010,900),
   '17-estabilidad-345.png':(220,0,1010,580),
+  '18-github-linux.png':(220,0,1010,550),
   '02-carrito-vacio.png':(0,0,600,550),
   '03-filtro-corregido.png':(0,0,600,300),
   '04-login-vacio.png':(0,0,600,h),
@@ -79,12 +80,22 @@ def build(name):
  OUT.mkdir(parents=True,exist_ok=True)
  SimpleDocTemplate(str(OUT/name),pagesize=A4,leftMargin=50,rightMargin=50,topMargin=45,bottomMargin=57,title=name,author='').build(story,onFirstPage=footer,onLaterPages=footer)
 
+
+def evidencia_github():
+ page();title('GitHub: ejecución y artefacto verificados')
+ img('18-github-linux.png','Reporte HTML real descargado del artefacto de GitHub Actions en Ubuntu Linux. Esta imagen corresponde al reporte de Playwright, no a una pantalla simulada del sitio GitHub.',475)
+ sub('Ejecución del 21 de octubre de 2026')
+ table([['Comprobación remota','Resultado'],['Instalación y ESLint','Correctos'],['Chromium / Firefox / WebKit','115 / 115 en cada navegador'],['Total / fallos / flaky / saltos','345 / 0 / 0 / 0'],['Artefacto playwright-report','Publicado y descargado; JSON y logs comprobados']],[220,255])
+ p('Repositorio: https://github.com/Eileeno56/tiendaut-playwright','Small')
+ p('Ejecución: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242','Small')
+ p('La verificación y los adjuntos están en evidencias/github/. El repositorio es privado: el docente necesita acceso para abrirlo. No se activó protección de rama porque GitHub exige Pro o visibilidad pública para esa función; respuesta HTTP 403 conservada en verificacion.json.','Small')
+
 p('GESTIÓN DEL PROCESO DE DESARROLLO DE SOFTWARE','Sub')
 p('Práctica 1','Cover');title('Cazadores de defectos en TiendaUT')
-p('Desarrollo, análisis, corrección y evidencia visual. Fecha de ejecución: 15 de octubre de 2026. Fuente de requisitos: guía suministrada, capítulo 19, página 53 y Anexo B.')
+p('Desarrollo, análisis, corrección y evidencia visual. Pruebas locales: 15 de octubre de 2026. Verificación en GitHub: 21 de octubre de 2026. Fuente de requisitos: guía suministrada, capítulo 19, página 53 y Anexo B.')
 sub('Objetivo y materiales')
 p('Analizar el sitio del ZIP con Playwright, clasificar los fallos, corregir su causa y comprobar estabilidad. Entorno: Windows, Node 24.18.0, Playwright 1.64.1 y axe 4.14.0. Se instalaron dependencias y Chromium, Firefox y WebKit.')
-table([['Requisito','Cumplimiento comprobado'],['1. Descomprimir e instalar / publicar','Local realizado. Publicación GitHub pendiente de cuenta.'],['2. E1-E8 y bitácora','Ocho fallos originales conservados y clasificados.'],['3. Suite Chromium y seis pasos','12 pruebas aprobadas y 7 fallidas antes de corregir.'],['4. Corregir el sitio','Carrito, filtro tardío, recursos, accesibilidad y API corregidos.'],['5. Tres pruebas nuevas','Vaciado, login vacío y contrato de todos los productos.'],['6. Cinco repeticiones / tres navegadores','315/315 en la entrega inicial; 345/345 en la suite ampliada.'],['7. Actions y artefacto remoto','Workflow preparado; ejecución remota no realizada.']],[180,295])
+table([['Requisito','Cumplimiento comprobado'],['1. Descomprimir e instalar / publicar','Realizado y publicado en Eileeno56/tiendaut-playwright.'],['2. E1-E8 y bitácora','Ocho fallos originales conservados y clasificados.'],['3. Suite Chromium y seis pasos','12 pruebas aprobadas y 7 fallidas antes de corregir.'],['4. Corregir el sitio','Carrito, filtro tardío, recursos, accesibilidad y API corregidos.'],['5. Tres pruebas nuevas','Vaciado, login vacío y contrato de todos los productos.'],['6. Cinco repeticiones / tres navegadores','315/315 en la entrega inicial; 345/345 en la suite ampliada.'],['7. Actions y artefacto remoto','GitHub Actions en verde; artefacto publicado y descargado.']],[180,295])
 p('Este informe documenta la primera de las dos prácticas solicitadas por el estudiante. Para legibilidad, las figuras muestran detalles de capturas reales; los PNG completos se entregan con los reportes HTML, logs, JSON y trazas. Las evidencias locales no se presentan como una ejecución de GitHub.','Small')
 page();title('1. Laboratorio: ocho fallos reproducidos')
 img('08-laboratorio-original.png','Figura 1. Reporte HTML real del laboratorio original: 8 ejecutadas, 8 fallidas. Los fallos son intencionales; View Trace conserva su evidencia.',450)
@@ -124,9 +135,10 @@ page();title('7. Red, calidad e integración continua')
 img('06-error-api-controlado.png','Figura 10. Un 500 de la API se simula con page.route. El sitio informa No pudimos cargar los productos en una alerta; ya no queda sin explicación.',425)
 sub('Calidad comprobada')
 p('La captura del catálogo auditado y el adjunto calidad.json acreditan consola sin errores, ninguna respuesta de red >=400 en el camino normal y cero violaciones axe en el catálogo. El caso 500 se valida por separado porque su error de red es intencional.')
-sub('GitHub Actions: estado pendiente')
-p('El workflow instala dependencias y tres navegadores, ejecuta npm run lint y cinco repeticiones y publica HTML, JSON, trazas y referencias visuales durante 30 días incluso al fallar. No se obtuvo una cuenta GitHub: no se creó un repositorio remoto, no se verificó un run en verde ni el artefacto remoto. Estos requisitos siguen pendientes y no tienen una captura simulada.')
-p('Para cerrar: conectar una cuenta, crear el repositorio, subir el proyecto, ejecutar Actions y guardar las capturas del run verde y del artefacto descargable. Las instrucciones están en documentacion/GITHUB.md. Las referencias Linux deben revisarse antes de exigir comparación estricta entre cambios.','Small')
+sub('GitHub Actions: verificado en verde')
+p('El 21 de octubre se publicó el repositorio Eileeno56/tiendaut-playwright y se ejecutó el workflow en Ubuntu. Instalación, ESLint, 345 pruebas y publicación de artefactos terminaron correctamente. Se descargó playwright-report y se comprobaron sus resultados, logs y referencias visuales Linux.')
+p('La primera ejecución Linux creó las referencias ausentes; se revisaron y se incorporaron al código. El workflow ahora exige comparar sin regenerarlas. La protección de rama no pudo activarse: GitHub devuelve 403 y exige Pro o hacer público el repositorio; se mantiene privado. Ver la evidencia remota en la página siguiente.','Small')
+evidencia_github()
 build('practica-1-con-evidencias.pdf')
 
 story=[]
@@ -139,7 +151,7 @@ elif scope.get('asumido_por_zip'):
 else:
  p('Aplicación de referencia al único proyecto recibido: TiendaUT. Falta confirmar que este es el mini-proyecto del equipo. Si el equipo usa otro sistema, este informe y las pruebas deben aplicarse a ese sistema antes de declarar cumplido ese requisito.')
 p('Objetivo: cubrir recorridos críticos, casos negativos, API, análisis de calidad y configuración de CI. Requisitos: capítulo 19, página 53 de la guía. Fecha: 15 de octubre de 2026.')
-table([['Requisito','Implementación y evidencia'],['Ocho E2E y dos recorridos completos','Matriz de casos de la página siguiente; FC-01 y FC-02.'],['Dos negativos y una API','Contraseña incorrecta, campos vacíos, API 500 y contrato de productos.'],['Page Object y preparación común','LoginPage y CatalogoPage; beforeEach y fixture loginPage.'],['Consola, red y axe','Tres auditorías originales y adjunto calidad.json.'],['baseURL, webServer y trace','playwright.config.ts; trace retain-on-failure.'],['Pipeline y reporte','Workflow preparado; ejecución remota pendiente de cuenta.'],['Bitácora completa','BITACORA.md, INDICE-EVIDENCIAS.md y trazas históricas.']],[175,300])
+table([['Requisito','Implementación y evidencia'],['Ocho E2E y dos recorridos completos','Matriz de casos de la página siguiente; FC-01 y FC-02.'],['Dos negativos y una API','Contraseña incorrecta, campos vacíos, API 500 y contrato de productos.'],['Page Object y preparación común','LoginPage y CatalogoPage; beforeEach y fixture loginPage.'],['Consola, red y axe','Tres auditorías originales y adjunto calidad.json.'],['baseURL, webServer y trace','playwright.config.ts; trace retain-on-failure.'],['Pipeline y reporte','GitHub Actions en verde y reporte publicado como artefacto.'],['Bitácora completa','BITACORA.md, INDICE-EVIDENCIAS.md y trazas históricas.']],[175,300])
 p('Los dos recorridos completos fueron añadidos expresamente. Se verificó toda la suite ampliada: 345/345 en tres navegadores. Las ocho pruebas documentales aparte capturan los estados después de verificarlos; no aumentan artificialmente el recuento de aceptación.','Small')
 page();title('1. Diseño y trazabilidad de casos')
 table([['ID / tipo','Pasos y resultado esperado','Archivo'],['E2E-01 / crítico','Inicio > login válido > catálogo con cuatro productos y contador 0.','flujos-completos.spec.ts / FC-01'],['E2E-02 / crítico','Inicio > catálogo > buscar monitor y agregar > buscar mouse y agregar > contador 2 > vaciar y verificar 0.','flujos-completos.spec.ts / FC-02'],['E2E-03 / negativo','Contraseña equivocada: alerta y permanencia en login.','login.spec.ts'],['E2E-04 / negativo','Campos vacíos: alerta y permanencia en login.','practica.spec.ts'],['E2E-05 / funcional','Filtrar monitor y comprobar exactamente un resultado.','carrito.spec.ts'],['E2E-06 / negativo','API 500: presentar aviso al usuario.','red-y-visual.spec.ts'],['E2E-07 / negativo','Red interrumpida: aviso y cero excepciones JavaScript.','regresiones.spec.ts'],['E2E-08 / funcional','Inicio: título TiendaUT y encabezado correcto.','inicio.spec.ts'],['API-01 / API','GET exitoso: cada producto tiene nombre y precio válido mayor que 0.','practica.spec.ts']],[90,270,115])
@@ -184,8 +196,9 @@ img('17-estabilidad-345.png','Figura 8. Resultado real común a las dos práctic
 p('Chromium 115/115; Firefox 115/115; WebKit 115/115. Cero fallos, flaky o saltos. ESLint sin errores. Resultado fuente: evidencias/estabilidad-ampliada/resumen.json. Evidencia documental: ocho pruebas separadas, con trazas y PNG.')
 sub('Reproducir y consultar')
 code('npm ci\nnpx playwright install\nnpm run lint\nnpm run test:estabilidad\nnpx playwright test --config=playwright.evidencias.config.ts')
-sub('Requisito remoto que falta cerrar')
-p('El YAML prepara npm ci, lint, Playwright y publicación de artefactos. Falta usar una cuenta GitHub para crear y subir el repositorio, verificar el run en verde y descargar su artefacto. No se adjunta una captura de Actions porque no ocurrió una ejecución remota. La protección de rama requiere permisos sobre el repositorio.')
+sub('Integración continua comprobada')
+p('El repositorio ya está publicado y GitHub Actions terminó en verde con npm ci, lint y 345 pruebas. Se publicó y descargó el artefacto playwright-report. La captura de la página siguiente proviene de ese reporte remoto real. La protección de rama está limitada por el plan de GitHub para repositorios privados; no se declara activada.')
 if not scope['confirmado'] and not scope.get('asumido_por_zip'):p('También falta confirmar que TiendaUT corresponde al mini-proyecto del equipo. El código y las capturas prueban trabajo real sobre esta aplicación; no prueban que se haya trabajado en un proyecto distinto que no se proporcionó.','Small')
+evidencia_github()
 build('practica-2-con-evidencias.pdf')
 print('Dos informes creados con capturas reales; requisitos externos identificados.')

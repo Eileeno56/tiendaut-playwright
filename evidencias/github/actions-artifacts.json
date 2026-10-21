@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 12390199476,
+      "node_id": "MDg6QXJ0aWZhY3QxMjM5MDE5OTQ3Ng==",
+      "name": "playwright-report",
+      "size_in_bytes": 458219,
+      "url": "https://api.github.com/repos/Eileeno56/tiendaut-playwright/actions/artifacts/12390199476",
+      "archive_download_url": "https://api.github.com/repos/Eileeno56/tiendaut-playwright/actions/artifacts/12390199476/zip",
+      "expired": false,
+      "digest": "sha256:ae5f6794b5f695e8834efa9bc0f02a4dc73fcfa172f30a85974bfa6cf1005d19",
+      "created_at": "2026-10-21T23:48:06Z",
+      "updated_at": "2026-10-21T23:48:06Z",
+      "expires_at": "2026-11-20T23:48:05Z",
+      "workflow_run": {
+        "id": 39695106242,
+        "repository_id": 1429040929,
+        "head_repository_id": 1429040929,
+        "head_branch": "main",
+        "head_sha": "f0718f596b5f21aef5662ce94bb8b27965e4381c"
+      }
+    }
+  ]
+}

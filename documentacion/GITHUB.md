@@ -1,22 +1,22 @@
-# Publicación y comprobación pendiente en GitHub
+# GitHub verificado - 21 de octubre de 2026
 
-El entorno de trabajo no expone un conector de GitHub, una sesión de navegador ni credenciales de GitHub CLI. Por ello no se creó un repositorio remoto ni se afirma que Actions esté en verde. La comprobación local no sustituye una ejecución de GitHub Actions.
+Repositorio privado: https://github.com/Eileeno56/tiendaut-playwright
 
-El workflow `.github/workflows/playwright.yml` queda preparado para push y pull request a main/master: Node 24, npm ci, npm run lint, instalación de los tres navegadores y cinco repeticiones de la suite, con rechazo de pruebas flaky. Publica playwright-report, test-results y las referencias visuales durante 30 días incluso si hay fallos.
+Ejecución verificada: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242
 
-Cuando haya una cuenta disponible:
+- Instalación de dependencias: correcta.
+- ESLint: correcto.
+- Chromium, Firefox y WebKit: 115/115 cada uno; total 345/345.
+- Fallos, flaky y saltos: cero.
+- Publicación de playwright-report: correcta; artefacto descargado y verificado.
+- Datos de evidencia: evidencias/github/verificacion.json, actions-jobs.json, actions-artifacts.json, artefacto/ y logs/.
 
-1. Crear un repositorio vacío llamado tiendaut-playwright (privado si se desea).
-2. Abrir terminal dentro de este proyecto. Ejecutar git init -b main si aún no existe .git, git add ., git commit -m "Completa práctica Playwright y bitácora". Usar la identidad Git propia.
-3. Agregar el remoto con git remote add origin URL_DEL_REPOSITORIO y ejecutar git push -u origin main.
-4. En Actions abrir Playwright Tests y verificar npm ci, lint y las 315 ejecuciones de aceptación. Registrar la URL y el resultado real de ese run en la bitácora.
-5. Descargar el artefacto playwright-report; comprobar que incluye HTML, resumen JSON y las trazas de cualquier fallo.
-6. En Settings > Branches (o Rulesets), exigir el check del job test para integrar a main. Esta protección requiere acceso de administración; no está configurada desde este entorno.
+Las tres referencias Linux generadas en la primera ejecución se revisaron y se añadieron a tests/red-y-visual.spec.ts-snapshots/. El workflow ahora usa --update-snapshots=none para comparar estrictamente y no generar referencias durante la validación.
 
-## Referencias visuales por plataforma
+## Protección de rama
 
-Se entregan referencias revisadas de Windows para Chromium, Firefox y WebKit. El workflow conserva la política del ZIP `--update-snapshots=missing`: Linux genera las imágenes que le falten. Esto permite arrancar CI, pero su primera ejecución NO demuestra ausencia de regresión visual frente a una referencia Linux previamente aprobada.
+Se intentó exigir el check test en main. GitHub respondió 403: Upgrade to GitHub Pro or make this repository public to enable this feature. La protección no está activada; no se compró un plan ni se cambió la visibilidad privada.
 
-Después de revisar las imágenes Linux del artefacto, incorporarlas a tests/red-y-visual.spec.ts-snapshots y retirar `--update-snapshots=missing` (o usar `--update-snapshots=none`) del workflow para exigir comparación estricta también en Linux. Nunca usar actualización de snapshots para ocultar diferencias inesperadas.
+## Entrega al docente
 
-Documentación oficial consultada: https://playwright.dev/docs/test-snapshots y https://playwright.dev/docs/api/class-testconfig.
+Compartir el enlace del repositorio y los dos informes. Como el repositorio es privado, el docente necesita acceso. Agregar al docente requiere conocer su usuario y autorización para invitarlo. No se envió ninguna invitación ni se marcó la tarea como entregada en Classroom.
