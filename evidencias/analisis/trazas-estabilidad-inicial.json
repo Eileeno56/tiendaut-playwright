@@ -1,0 +1,1890 @@
+[
+  {
+    "trace": "evidencias/estabilidad-inicial/resultados/analisis-Análisis-de-calid-4c63f-n-de-red-responde-con-error-firefox-repeat3/trace.zip",
+    "eventos": [
+      {
+        "type": "before",
+        "callId": "tnvs@1",
+        "startTime": 241389.759,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@30",
+        "parentId": "tnvs@1",
+        "startTime": 241426.539,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@31",
+        "parentId": "tnvs@30",
+        "startTime": 241431.327,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@31",
+        "endTime": 242899.998,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@30",
+        "endTime": 242900.354,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@34",
+        "parentId": "tnvs@1",
+        "startTime": 242903.436,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@35",
+        "parentId": "tnvs@34",
+        "startTime": 242906.81,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@35",
+        "endTime": 243153.404,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@34",
+        "endTime": 243265.092,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@42",
+        "parentId": "tnvs@1",
+        "startTime": 243266.179,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@43",
+        "parentId": "tnvs@42",
+        "startTime": 243269.007,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@43",
+        "endTime": 245445.953,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@42",
+        "endTime": 245446.067,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@1",
+        "endTime": 245446.193,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@46",
+        "startTime": 245450.55,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/catalogo.html",
+        "params": {
+          "url": "/catalogo.html"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\analisis.spec.ts",
+            "line": 25,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@46",
+        "endTime": 246193.027,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@48",
+        "startTime": 246209.043,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toHaveCount\"",
+        "subtitle": "getByTestId('producto')",
+        "params": {
+          "locator": "getByTestId('producto')",
+          "expected": "4"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\analisis.spec.ts",
+            "line": 26,
+            "column": 48
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@48",
+        "endTime": 254443.493,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('producto')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('producto') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('producto')\u001b[22m\n\u001b[2m    6 × locator resolved to 0 elements\u001b[22m\n\u001b[2m      - unexpected value \"0\"\u001b[22m\n",
+          "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('producto')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('producto') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('producto')\u001b[22m\n\u001b[2m    6 × locator resolved to 0 elements\u001b[22m\n\u001b[2m      - unexpected value \"0\"\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\analisis.spec.ts:26:48"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@50",
+        "startTime": 254447.084,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@52",
+        "parentId": "tnvs@50",
+        "startTime": 255327.72,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@52",
+        "endTime": 255328.599,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@53",
+        "parentId": "tnvs@50",
+        "startTime": 255330.864,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@60",
+        "parentId": "tnvs@53",
+        "startTime": 255847.824,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@60",
+        "endTime": 256337.916,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@53",
+        "endTime": 256346.992,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/3e7fd40f97547a6c2c5f1eed421830cedeb88e3d"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@68",
+        "startTime": 256356.789,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@68",
+        "endTime": 256356.818,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/47525034de34480c7730d44af54f0408b29dbdf2"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@71",
+        "parentId": "tnvs@50",
+        "startTime": 256359.06,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@71",
+        "endTime": 256359.129,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@72",
+        "parentId": "tnvs@50",
+        "startTime": 256359.161,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@72",
+        "endTime": 256359.198,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@74",
+        "parentId": "tnvs@50",
+        "startTime": 256360.085,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@74",
+        "endTime": 256360.145,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@76",
+        "parentId": "tnvs@50",
+        "startTime": 256360.943,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@76",
+        "endTime": 256360.989,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@83",
+        "parentId": "tnvs@50",
+        "startTime": 256365.913,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@83",
+        "endTime": 256365.968,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@87",
+        "parentId": "tnvs@50",
+        "startTime": 256368.692,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@87",
+        "endTime": 256368.739,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@90",
+        "parentId": "tnvs@50",
+        "startTime": 256370.34,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@90",
+        "endTime": 256370.379,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@50",
+        "endTime": 256375.896,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/7b735e69d542344cf4c837864c5cc0c442742428"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@97",
+        "startTime": 256376.615,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@101",
+        "parentId": "tnvs@97",
+        "startTime": 256379.304,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@101",
+        "endTime": 256379.336,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@102",
+        "parentId": "tnvs@97",
+        "startTime": 256379.811,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@102",
+        "endTime": 257467.65,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@107",
+        "parentId": "tnvs@97",
+        "startTime": 257470.294,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@107",
+        "endTime": 257470.341,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@108",
+        "parentId": "tnvs@97",
+        "startTime": 257470.361,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@108",
+        "endTime": 257470.394,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@97",
+        "endTime": 257475.59,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@43",
+        "startTime": 243270.912,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@43",
+        "endTime": 245441.623,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@46",
+        "startTime": 245456.848,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/catalogo.html",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@46",
+        "endTime": 246168.196,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "tnvs@48",
+        "startTime": 246213.742,
+        "title": "Expect \"toHaveCount\"",
+        "class": "Frame",
+        "method": "expect",
+        "params": {
+          "selector": "internal:testid=[data-testid=\"producto\"s]",
+          "expression": "to.have.count",
+          "expectedNumber": 4,
+          "expectedValue": {
+            "value": {
+              "v": "undefined"
+            },
+            "handles": []
+          },
+          "isNot": false,
+          "timeout": 5000
+        }
+      },
+      {
+        "type": "after",
+        "callId": "tnvs@48",
+        "endTime": 251424.315,
+        "error": {
+          "message": "Expect failed",
+          "stack": "ExpectError: Expect failed\n    at _Frame.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25606:17)\n    at _FrameDispatcher.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:56333:11)\n    at _ProgressController.run (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:13018:27)\n    at DispatcherConnection.dispatch (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:20191:27)",
+          "name": "ExpectError"
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@a7eba38c446176a5f04e7b8b3d598bd5",
+          "startedDateTime": "2026-10-15T23:20:26.901Z",
+          "time": 110.75800000000001,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/catalogo.html",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0"
+              },
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              }
+            ],
+            "queryString": [],
+            "headersSize": 432,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:20:27 GMT"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 2079,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/d9d78d011c5dcc3c2cb04909d5fc8503f9990382.html"
+            },
+            "headersSize": 171,
+            "bodySize": 2079,
+            "redirectURL": "",
+            "_transferSize": 2262
+          },
+          "cache": {},
+          "timings": {
+            "dns": 0.191,
+            "connect": 1.137,
+            "ssl": 96.521,
+            "send": 0,
+            "wait": 12.733,
+            "receive": 0.176
+          },
+          "_frameref": "frame@6af585ac844dfafa30c5cc5b152c6947",
+          "_monotonicTime": 245679.462,
+          "_resourceType": "document",
+          "serverIPAddress": "127.0.0.1",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@a7eba38c446176a5f04e7b8b3d598bd5",
+          "startedDateTime": "2026-10-15T23:20:27.375Z",
+          "time": 7.014,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/logo.png",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0"
+              },
+              {
+                "name": "Accept",
+                "value": "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "image"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "no-cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "queryString": [],
+            "headersSize": 432,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "image/png"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:20:27 GMT"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 4219,
+              "mimeType": "image/png",
+              "compression": 0,
+              "_file": "resources/b64208e5f58c272c846898450c10a20871f1d4f5.png"
+            },
+            "headersSize": 156,
+            "bodySize": 4219,
+            "redirectURL": "",
+            "_transferSize": 4388
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 6.891,
+            "receive": 0.123
+          },
+          "_frameref": "frame@6af585ac844dfafa30c5cc5b152c6947",
+          "_monotonicTime": 246121.487,
+          "_resourceType": "image",
+          "serverIPAddress": "127.0.0.1",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@a7eba38c446176a5f04e7b8b3d598bd5",
+          "startedDateTime": "2026-10-15T23:20:27.375Z",
+          "time": 1897.016,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/api/productos",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "queryString": [],
+            "headersSize": 368,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:20:28 GMT"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 206,
+              "mimeType": "application/json",
+              "compression": 0,
+              "_file": "resources/f5fbb5c88ceba7521b5c73b03d7a39a85abd7b55.json"
+            },
+            "headersSize": 163,
+            "bodySize": 206,
+            "redirectURL": "",
+            "_transferSize": 380
+          },
+          "cache": {},
+          "timings": {
+            "dns": 0.179,
+            "connect": 1.185,
+            "ssl": 59.103,
+            "send": 0,
+            "wait": 1836.264,
+            "receive": 0.285
+          },
+          "_frameref": "frame@6af585ac844dfafa30c5cc5b152c6947",
+          "_monotonicTime": 246123.148,
+          "_resourceType": "fetch",
+          "serverIPAddress": "127.0.0.1",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/estabilidad-inicial/resultados/analisis-Análisis-de-calid-99eef-iolaciones-de-accesibilidad-firefox-repeat4/trace.zip",
+    "eventos": [
+      {
+        "type": "before",
+        "callId": "xpdy@95",
+        "startTime": 285952.862,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@119",
+        "parentId": "xpdy@95",
+        "startTime": 285976.049,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@120",
+        "parentId": "xpdy@119",
+        "startTime": 285977.349,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@120",
+        "endTime": 286001.089,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@119",
+        "endTime": 286034.656,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@127",
+        "parentId": "xpdy@95",
+        "startTime": 286035.591,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@128",
+        "parentId": "xpdy@127",
+        "startTime": 286037.168,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@128",
+        "endTime": 286923.457,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@127",
+        "endTime": 286923.553,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@95",
+        "endTime": 286923.641,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@130",
+        "startTime": 286925.833,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/catalogo.html",
+        "params": {
+          "url": "/catalogo.html"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\analisis.spec.ts",
+            "line": 32,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@130",
+        "endTime": 287143.372,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@132",
+        "startTime": 287145.797,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toHaveCount\"",
+        "subtitle": "getByTestId('producto')",
+        "params": {
+          "locator": "getByTestId('producto')",
+          "expected": "4"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\analisis.spec.ts",
+            "line": 33,
+            "column": 48
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@132",
+        "endTime": 295186.17,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('producto')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('producto') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('producto')\u001b[22m\n\u001b[2m    5 × locator resolved to 0 elements\u001b[22m\n\u001b[2m      - unexpected value \"0\"\u001b[22m\n",
+          "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('producto')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('producto') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('producto')\u001b[22m\n\u001b[2m    5 × locator resolved to 0 elements\u001b[22m\n\u001b[2m      - unexpected value \"0\"\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\analisis.spec.ts:33:48"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@134",
+        "startTime": 295190.203,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@136",
+        "parentId": "xpdy@134",
+        "startTime": 296956.933,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@136",
+        "endTime": 296957.239,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@137",
+        "parentId": "xpdy@134",
+        "startTime": 296958.268,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@144",
+        "parentId": "xpdy@137",
+        "startTime": 297215.017,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@144",
+        "endTime": 297785.241,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@137",
+        "endTime": 297795.164,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/839ca867f010fca9b2ce7cdc2255c3aad775ca06"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@152",
+        "startTime": 297809.594,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@152",
+        "endTime": 297809.622,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/ad4a588d11134bb002340c1c7f4cc1cfbdf1ea40"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@155",
+        "parentId": "xpdy@134",
+        "startTime": 297811.307,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@155",
+        "endTime": 297811.368,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@156",
+        "parentId": "xpdy@134",
+        "startTime": 297811.402,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@156",
+        "endTime": 297811.444,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@158",
+        "parentId": "xpdy@134",
+        "startTime": 297812.346,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@158",
+        "endTime": 297812.404,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@160",
+        "parentId": "xpdy@134",
+        "startTime": 297813.21,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@160",
+        "endTime": 297813.241,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@167",
+        "parentId": "xpdy@134",
+        "startTime": 297817.845,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@167",
+        "endTime": 297817.878,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@171",
+        "parentId": "xpdy@134",
+        "startTime": 297819.351,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@171",
+        "endTime": 297819.38,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@174",
+        "parentId": "xpdy@134",
+        "startTime": 297820.518,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@174",
+        "endTime": 297820.562,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@134",
+        "endTime": 297827.554,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/7b735e69d542344cf4c837864c5cc0c442742428"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@181",
+        "startTime": 297828.114,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@185",
+        "parentId": "xpdy@181",
+        "startTime": 297830.417,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@185",
+        "endTime": 297830.448,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@186",
+        "parentId": "xpdy@181",
+        "startTime": 297830.971,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@186",
+        "endTime": 298787.78,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@191",
+        "parentId": "xpdy@181",
+        "startTime": 298790.188,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@191",
+        "endTime": 298790.247,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@192",
+        "parentId": "xpdy@181",
+        "startTime": 298790.287,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#firefox",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@192",
+        "endTime": 298790.328,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@181",
+        "endTime": 298794.602,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@128",
+        "startTime": 286038.018,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@128",
+        "endTime": 286921.064,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@130",
+        "startTime": 286928.91,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/catalogo.html",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@130",
+        "endTime": 287123.129,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "xpdy@132",
+        "startTime": 287149.255,
+        "title": "Expect \"toHaveCount\"",
+        "class": "Frame",
+        "method": "expect",
+        "params": {
+          "selector": "internal:testid=[data-testid=\"producto\"s]",
+          "expression": "to.have.count",
+          "expectedNumber": 4,
+          "expectedValue": {
+            "value": {
+              "v": "undefined"
+            },
+            "handles": []
+          },
+          "isNot": false,
+          "timeout": 5000
+        }
+      },
+      {
+        "type": "after",
+        "callId": "xpdy@132",
+        "endTime": 292158.58,
+        "error": {
+          "message": "Expect failed",
+          "stack": "ExpectError: Expect failed\n    at _Frame.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25606:17)\n    at _FrameDispatcher.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:56333:11)\n    at _ProgressController.run (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:13018:27)\n    at DispatcherConnection.dispatch (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:20191:27)",
+          "name": "ExpectError"
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@9ccf313b7b5510959248efacf38ecb32",
+          "startedDateTime": "2026-10-15T23:21:08.249Z",
+          "time": 42.17700000000001,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/catalogo.html",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0"
+              },
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              }
+            ],
+            "queryString": [],
+            "headersSize": 432,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:21:08 GMT"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 2079,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/d9d78d011c5dcc3c2cb04909d5fc8503f9990382.html"
+            },
+            "headersSize": 171,
+            "bodySize": 2079,
+            "redirectURL": "",
+            "_transferSize": 2262
+          },
+          "cache": {},
+          "timings": {
+            "dns": 0.216,
+            "connect": 1.186,
+            "ssl": 29.239,
+            "send": 0,
+            "wait": 11.33,
+            "receive": 0.206
+          },
+          "_frameref": "frame@c0789f0880281c14926d205f9b80cc27",
+          "_monotonicTime": 286962.731,
+          "_resourceType": "document",
+          "serverIPAddress": "127.0.0.1",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@9ccf313b7b5510959248efacf38ecb32",
+          "startedDateTime": "2026-10-15T23:21:08.348Z",
+          "time": 9.262,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/logo.png",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0"
+              },
+              {
+                "name": "Accept",
+                "value": "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "image"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "no-cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "queryString": [],
+            "headersSize": 432,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "image/png"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:21:08 GMT"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 4219,
+              "mimeType": "image/png",
+              "compression": 0,
+              "_file": "resources/b64208e5f58c272c846898450c10a20871f1d4f5.png"
+            },
+            "headersSize": 156,
+            "bodySize": 4219,
+            "redirectURL": "",
+            "_transferSize": 4388
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 9.108,
+            "receive": 0.154
+          },
+          "_frameref": "frame@c0789f0880281c14926d205f9b80cc27",
+          "_monotonicTime": 287094.517,
+          "_resourceType": "image",
+          "serverIPAddress": "127.0.0.1",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@9ccf313b7b5510959248efacf38ecb32",
+          "startedDateTime": "2026-10-15T23:21:08.357Z",
+          "time": 861.7899999999998,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/api/productos",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              }
+            ],
+            "queryString": [],
+            "headersSize": 368,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:21:09 GMT"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 206,
+              "mimeType": "application/json",
+              "compression": 0,
+              "_file": "resources/f5fbb5c88ceba7521b5c73b03d7a39a85abd7b55.json"
+            },
+            "headersSize": 163,
+            "bodySize": 206,
+            "redirectURL": "",
+            "_transferSize": 380
+          },
+          "cache": {},
+          "timings": {
+            "dns": 0.139,
+            "connect": 1.197,
+            "ssl": 48.844,
+            "send": 0,
+            "wait": 811.425,
+            "receive": 0.185
+          },
+          "_frameref": "frame@c0789f0880281c14926d205f9b80cc27",
+          "_monotonicTime": 287103.862,
+          "_resourceType": "fetch",
+          "serverIPAddress": "127.0.0.1",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  }
+]

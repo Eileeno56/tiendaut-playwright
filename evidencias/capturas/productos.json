@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nombre": "Teclado mecánico",
+    "precio": 899
+  },
+  {
+    "id": 2,
+    "nombre": "Mouse inalámbrico",
+    "precio": 349
+  },
+  {
+    "id": 3,
+    "nombre": "Monitor 24 pulgadas",
+    "precio": 2799
+  },
+  {
+    "id": 4,
+    "nombre": "Audífonos USB",
+    "precio": 459
+  }
+]

@@ -1,0 +1,56 @@
+
+Running 8 tests using 1 worker
+
+(node:15188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › evidencias\capturas\documentacion.spec.ts:11:5 › evidencia: agregar y vaciar sin errores JavaScript (2.1s)
+  ok 2 [chromium] › evidencias\capturas\documentacion.spec.ts:26:5 › evidencia: filtrar antes de recibir productos (1.3s)
+  ok 3 [chromium] › evidencias\capturas\documentacion.spec.ts:38:5 › evidencia: login vacío presenta alerta (475ms)
+  x  4 [chromium] › evidencias\capturas\documentacion.spec.ts:46:5 › evidencia: contrato real de productos (1.0m)
+(node:17976) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 5 [chromium] › evidencias\capturas\documentacion.spec.ts:60:5 › evidencia: API 500 presenta aviso (406ms)
+  ok 6 [chromium] › evidencias\capturas\documentacion.spec.ts:67:5 › evidencia: consola, red y accesibilidad del catálogo (2.2s)
+  ok 7 [chromium] › evidencias\capturas\documentacion.spec.ts:86:5 › evidencia: recorrido completo de acceso (1.8s)
+  ok 8 [chromium] › evidencias\capturas\documentacion.spec.ts:101:5 › evidencia: recorrido completo del carrito (1.6s)
+
+
+  1) [chromium] › evidencias\capturas\documentacion.spec.ts:46:5 › evidencia: contrato real de productos 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.check: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for getByRole('checkbox')
+
+
+      53 |     expect(producto.precio).toBeGreaterThan(0);
+      54 |   }
+    > 55 |   await page.getByRole('checkbox').check();
+         |                                    ^
+      56 |   await page.screenshot({ path: path.join(carpeta, '05-api-productos.png'), clip: { x: 0, y: 0, width: 800, height: 600 } });
+      57 |   await testInfo.attach('productos.json', { body: JSON.stringify(productos, null, 2), contentType: 'application/json' });
+      58 | });
+        at C:\Users\user\Documents\labra\tiendaut-playwright\evidencias\capturas\documentacion.spec.ts:55:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\capturas\resultados\documentacion-evidencia-contrato-real-de-productos-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\capturas\resultados\documentacion-evidencia-contrato-real-de-productos-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\capturas\resultados\documentacion-evidencia-contrato-real-de-productos-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\capturas\resultados\documentacion-evidencia-contrato-real-de-productos-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\capturas\resultados\documentacion-evidencia-contrato-real-de-productos-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › evidencias\capturas\documentacion.spec.ts:46:5 › evidencia: contrato real de productos 
+  7 passed (1.3m)

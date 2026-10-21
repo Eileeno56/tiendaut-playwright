@@ -1,0 +1,340 @@
+
+> tiendaut-playwright@1.0.0 test:chromium
+> playwright test --project=chromium --grep-invert @laboratorio --workers=2 --output=evidencias/suite-original/resultados
+
+
+Running 19 tests using 2 workers
+
+(node:12376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   2 [chromium] › tests\analisis.spec.ts:6:7 › Análisis de calidad del catálogo › no hay errores en la consola del navegador (11.9s)
+  x   1 [chromium] › tests\analisis.spec.ts:19:7 › Análisis de calidad del catálogo › ninguna petición de red responde con error (22.4s)
+(node:25516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 [chromium] › tests\api.spec.ts:3:5 › la API devuelve los 4 productos (3.0s)
+  ok  5 [chromium] › tests\carrito.spec.ts:8:7 › Carrito de compras › muestra los 4 productos del catálogo (5.6s)
+  x   4 [chromium] › tests\analisis.spec.ts:31:7 › Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidad (10.6s)
+  ok  6 [chromium] › tests\carrito.spec.ts:13:7 › Carrito de compras › agregar dos productos actualiza el contador (1.7s)
+  ok  7 [chromium] › tests\inicio.spec.ts:3:5 › la página de inicio muestra el título y el encabezado (480ms)
+(node:24016) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [chromium] › tests\inicio.spec.ts:12:5 › el enlace "Iniciar sesión" lleva al formulario (723ms)
+  ok 10 [chromium] › tests\login-fixture.spec.ts:3:5 › login correcto usando el fixture loginPage (940ms)
+  ok 11 [chromium] › tests\login-pom.spec.ts:4:5 › login correcto usando Page Object (784ms)
+  ok 12 [chromium] › tests\login-pom.spec.ts:11:5 › login incorrecto usando Page Object (808ms)
+  ok 13 [chromium] › tests\login.spec.ts:8:7 › Inicio de sesión › con credenciales válidas entra al catálogo (766ms)
+  ok 14 [chromium] › tests\login.spec.ts:17:7 › Inicio de sesión › con contraseña incorrecta muestra un mensaje de error (670ms)
+  x   9 [chromium] › tests\carrito.spec.ts:31:7 › Carrito de compras › el buscador filtra los productos (6.2s)
+(node:15368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 16 [chromium] › tests\practica.spec.ts:15:5 › Iniciar sesión con los campos vacíos muestra el mensaje de error (738ms)
+  ok 17 [chromium] › tests\practica.spec.ts:22:5 › cada producto de la API tiene nombre y precio mayor que 0 (919ms)
+  x  15 [chromium] › tests\practica.spec.ts:3:5 › Vaciar carrito deja el contador en 0 sin errores de JavaScript (7.0s)
+(node:7892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  19 [chromium] › tests\red-y-visual.spec.ts:14:5 › la página de inicio se ve igual que la referencia (1.3s)
+  x  18 [chromium] › tests\red-y-visual.spec.ts:3:5 › si la API falla, el catálogo debe avisar al usuario (5.9s)
+
+
+  1) [chromium] › tests\analisis.spec.ts:6:7 › Análisis de calidad del catálogo › no hay errores en la consola del navegador 
+
+    Error: Errores encontrados en consola
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    + ]
+
+      14 |     await expect(page.getByTestId('producto')).toHaveCount(4);
+      15 |
+    > 16 |     expect(mensajes, 'Errores encontrados en consola').toEqual([]);
+         |                                                        ^
+      17 |   });
+      18 |
+      19 |   test('ninguna petición de red responde con error', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\analisis.spec.ts:16:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-fba8e-en-la-consola-del-navegador-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-fba8e-en-la-consola-del-navegador-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\suite-original\resultados\analisis-Análisis-de-calid-fba8e-en-la-consola-del-navegador-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-fba8e-en-la-consola-del-navegador-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\suite-original\resultados\analisis-Análisis-de-calid-fba8e-en-la-consola-del-navegador-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\analisis.spec.ts:19:7 › Análisis de calidad del catálogo › ninguna petición de red responde con error 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "404 http://localhost:3000/logo.png",
+    + ]
+
+      26 |     await expect(page.getByTestId('producto')).toHaveCount(4);
+      27 |
+    > 28 |     expect(fallidas).toEqual([]);
+         |                      ^
+      29 |   });
+      30 |
+      31 |   test('la página no tiene violaciones de accesibilidad', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\analisis.spec.ts:28:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-4c63f-n-de-red-responde-con-error-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-4c63f-n-de-red-responde-con-error-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\suite-original\resultados\analisis-Análisis-de-calid-4c63f-n-de-red-responde-con-error-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-4c63f-n-de-red-responde-con-error-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\suite-original\resultados\analisis-Análisis-de-calid-4c63f-n-de-red-responde-con-error-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests\analisis.spec.ts:31:7 › Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidad 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "image-alt: Images must have alternative text (1)",
+    +   "landmark-one-main: Document should have one main landmark (1)",
+    +   "region: All page content should be contained by landmarks (12)",
+    + ]
+
+      36 |     const resumen = resultados.violations.map(v => `${v.id}: ${v.help} (${v.nodes.length})`);
+      37 |
+    > 38 |     expect(resumen).toEqual([]);
+         |                     ^
+      39 |   });
+      40 | });
+      41 |
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\analisis.spec.ts:38:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-99eef-iolaciones-de-accesibilidad-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-99eef-iolaciones-de-accesibilidad-chromium\video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-99eef-iolaciones-de-accesibilidad-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\suite-original\resultados\analisis-Análisis-de-calid-99eef-iolaciones-de-accesibilidad-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\analisis-Análisis-de-calid-99eef-iolaciones-de-accesibilidad-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\suite-original\resultados\analisis-Análisis-de-calid-99eef-iolaciones-de-accesibilidad-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests\carrito.spec.ts:31:7 › Carrito de compras › el buscador filtra los productos 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('producto')
+    Expected: 1
+    Received: 4
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByTestId('producto') with timeout 5000ms
+      - waiting for getByTestId('producto')
+        5 × locator resolved to 0 elements
+          - unexpected value "0"
+        9 × locator resolved to 4 elements
+          - unexpected value "4"
+
+
+      33 |
+      34 |     const productos = page.getByTestId('producto');
+    > 35 |     await expect(productos).toHaveCount(1);
+         |                             ^
+      36 |     await expect(productos.first()).toContainText('Monitor 24 pulgadas');
+      37 |   });
+      38 | });
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\carrito.spec.ts:35:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\carrito-Carrito-de-compras-el-buscador-filtra-los-productos-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\carrito-Carrito-de-compras-el-buscador-filtra-los-productos-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\suite-original\resultados\carrito-Carrito-de-compras-el-buscador-filtra-los-productos-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\carrito-Carrito-de-compras-el-buscador-filtra-los-productos-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\suite-original\resultados\carrito-Carrito-de-compras-el-buscador-filtra-los-productos-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests\practica.spec.ts:3:5 › Vaciar carrito deja el contador en 0 sin errores de JavaScript 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('contador-carrito')
+    Expected: "0"
+    Received: "1"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" getByTestId('contador-carrito') with timeout 5000ms
+      - waiting for getByTestId('contador-carrito')
+        14 × locator resolved to <span data-testid="contador-carrito">1</span>
+           - unexpected value "1"
+
+
+       9 |   await expect(page.getByTestId('contador-carrito')).toHaveText('1');
+      10 |   await page.getByRole('button', { name: 'Vaciar carrito' }).click();
+    > 11 |   await expect(page.getByTestId('contador-carrito')).toHaveText('0');
+         |                                                      ^
+      12 |   expect(errores).toEqual([]);
+      13 | });
+      14 |
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\practica.spec.ts:11:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\practica-Vaciar-carrito-de-cdc44-0-sin-errores-de-JavaScript-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\practica-Vaciar-carrito-de-cdc44-0-sin-errores-de-JavaScript-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\suite-original\resultados\practica-Vaciar-carrito-de-cdc44-0-sin-errores-de-JavaScript-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\practica-Vaciar-carrito-de-cdc44-0-sin-errores-de-JavaScript-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\suite-original\resultados\practica-Vaciar-carrito-de-cdc44-0-sin-errores-de-JavaScript-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › tests\red-y-visual.spec.ts:3:5 › si la API falla, el catálogo debe avisar al usuario 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('No pudimos cargar los productos')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('No pudimos cargar los productos') with timeout 5000ms
+      - waiting for getByText('No pudimos cargar los productos')
+
+
+       9 |   await page.goto('/catalogo.html');
+      10 |
+    > 11 |   await expect(page.getByText('No pudimos cargar los productos')).toBeVisible();
+         |                                                                   ^
+      12 | });
+      13 |
+      14 | test('la página de inicio se ve igual que la referencia', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\red-y-visual.spec.ts:11:67
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\red-y-visual-si-la-API-fal-d7163-logo-debe-avisar-al-usuario-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\red-y-visual-si-la-API-fal-d7163-logo-debe-avisar-al-usuario-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\suite-original\resultados\red-y-visual-si-la-API-fal-d7163-logo-debe-avisar-al-usuario-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\red-y-visual-si-la-API-fal-d7163-logo-debe-avisar-al-usuario-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\suite-original\resultados\red-y-visual-si-la-API-fal-d7163-logo-debe-avisar-al-usuario-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › tests\red-y-visual.spec.ts:14:5 › la página de inicio se ve igual que la referencia 
+
+    Error: A snapshot doesn't exist at C:\Users\user\Documents\labra\tiendaut-playwright\tests\red-y-visual.spec.ts-snapshots\inicio-chromium-win32.png, writing actual.
+
+      14 | test('la página de inicio se ve igual que la referencia', async ({ page }) => {
+      15 |   await page.goto('/');
+    > 16 |   await expect(page).toHaveScreenshot('inicio.png');
+         |   ^
+      17 | });
+      18 |
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\red-y-visual.spec.ts:16:3
+
+    attachment #1: inicio (image/png) ──────────────────────────────────────────────────────────────
+    Expected: tests\red-y-visual.spec.ts-snapshots\inicio-chromium-win32.png
+    Received: evidencias\suite-original\resultados\red-y-visual-la-página-de--8883f--ve-igual-que-la-referencia-chromium\inicio-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\red-y-visual-la-página-de--8883f--ve-igual-que-la-referencia-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\red-y-visual-la-página-de--8883f--ve-igual-que-la-referencia-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\suite-original\resultados\red-y-visual-la-página-de--8883f--ve-igual-que-la-referencia-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\suite-original\resultados\red-y-visual-la-página-de--8883f--ve-igual-que-la-referencia-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\suite-original\resultados\red-y-visual-la-página-de--8883f--ve-igual-que-la-referencia-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7 failed
+    [chromium] › tests\analisis.spec.ts:6:7 › Análisis de calidad del catálogo › no hay errores en la consola del navegador 
+    [chromium] › tests\analisis.spec.ts:19:7 › Análisis de calidad del catálogo › ninguna petición de red responde con error 
+    [chromium] › tests\analisis.spec.ts:31:7 › Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidad 
+    [chromium] › tests\carrito.spec.ts:31:7 › Carrito de compras › el buscador filtra los productos 
+    [chromium] › tests\practica.spec.ts:3:5 › Vaciar carrito deja el contador en 0 sin errores de JavaScript 
+    [chromium] › tests\red-y-visual.spec.ts:3:5 › si la API falla, el catálogo debe avisar al usuario 
+    [chromium] › tests\red-y-visual.spec.ts:14:5 › la página de inicio se ve igual que la referencia 
+  12 passed (1.3m)

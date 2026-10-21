@@ -1,0 +1,86 @@
+
+> tiendaut-playwright@1.0.0 test
+> playwright test --grep-invert @laboratorio --update-snapshots=missing --output=evidencias/correccion/resultados
+
+
+Running 63 tests using 2 workers
+
+(node:5988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20336) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\analisis.spec.ts:6:7 › Análisis de calidad del catálogo › no hay errores en la consola del navegador (2.4s)
+  ok  2 [chromium] › tests\analisis.spec.ts:19:7 › Análisis de calidad del catálogo › ninguna petición de red responde con error (2.6s)
+  ok  4 [chromium] › tests\api.spec.ts:3:5 › la API devuelve los 4 productos (906ms)
+  ok  5 [chromium] › tests\carrito.spec.ts:8:7 › Carrito de compras › muestra los 4 productos del catálogo (1.5s)
+  ok  3 [chromium] › tests\analisis.spec.ts:31:7 › Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidad (3.5s)
+  ok  6 [chromium] › tests\carrito.spec.ts:13:7 › Carrito de compras › agregar dos productos actualiza el contador (1.7s)
+  ok  7 [chromium] › tests\carrito.spec.ts:31:7 › Carrito de compras › el buscador filtra los productos (1.7s)
+  ok  8 [chromium] › tests\inicio.spec.ts:3:5 › la página de inicio muestra el título y el encabezado (812ms)
+  ok  9 [chromium] › tests\inicio.spec.ts:12:5 › el enlace "Iniciar sesión" lleva al formulario (910ms)
+  ok 10 [chromium] › tests\login-fixture.spec.ts:3:5 › login correcto usando el fixture loginPage (980ms)
+  ok 11 [chromium] › tests\login-pom.spec.ts:4:5 › login correcto usando Page Object (921ms)
+  ok 12 [chromium] › tests\login-pom.spec.ts:11:5 › login incorrecto usando Page Object (882ms)
+  ok 13 [chromium] › tests\login.spec.ts:8:7 › Inicio de sesión › con credenciales válidas entra al catálogo (1.1s)
+  ok 14 [chromium] › tests\login.spec.ts:17:7 › Inicio de sesión › con contraseña incorrecta muestra un mensaje de error (1.0s)
+  ok 16 [chromium] › tests\practica.spec.ts:15:5 › Iniciar sesión con los campos vacíos muestra el mensaje de error (750ms)
+  ok 15 [chromium] › tests\practica.spec.ts:3:5 › Vaciar carrito deja el contador en 0 sin errores de JavaScript (1.7s)
+  ok 17 [chromium] › tests\practica.spec.ts:22:5 › cada producto de la API tiene nombre y precio mayor que 0 (889ms)
+  ok 18 [chromium] › tests\red-y-visual.spec.ts:3:5 › si la API falla, el catálogo debe avisar al usuario (748ms)
+  ok 19 [chromium] › tests\red-y-visual.spec.ts:14:5 › la página de inicio se ve igual que la referencia (1.0s)
+  ok 21 [chromium] › tests\regresiones.spec.ts:17:5 › avisa cuando la petición de productos se interrumpe (913ms)
+  ok 20 [chromium] › tests\regresiones.spec.ts:3:5 › conserva el filtro escrito antes de que responda la API (1.8s)
+(node:28148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:27828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 22 [firefox] › tests\analisis.spec.ts:6:7 › Análisis de calidad del catálogo › no hay errores en la consola del navegador (5.8s)
+  ok 23 [firefox] › tests\analisis.spec.ts:19:7 › Análisis de calidad del catálogo › ninguna petición de red responde con error (5.8s)
+  ok 25 [firefox] › tests\api.spec.ts:3:5 › la API devuelve los 4 productos (9.3s)
+  ok 26 [firefox] › tests\carrito.spec.ts:8:7 › Carrito de compras › muestra los 4 productos del catálogo (6.4s)
+  ok 24 [firefox] › tests\analisis.spec.ts:31:7 › Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidad (19.7s)
+  ok 27 [firefox] › tests\carrito.spec.ts:13:7 › Carrito de compras › agregar dos productos actualiza el contador (2.9s)
+  ok 29 [firefox] › tests\inicio.spec.ts:3:5 › la página de inicio muestra el título y el encabezado (1.4s)
+  ok 28 [firefox] › tests\carrito.spec.ts:31:7 › Carrito de compras › el buscador filtra los productos (2.4s)
+  ok 30 [firefox] › tests\inicio.spec.ts:12:5 › el enlace "Iniciar sesión" lleva al formulario (1.8s)
+  ok 31 [firefox] › tests\login-fixture.spec.ts:3:5 › login correcto usando el fixture loginPage (2.2s)
+  ok 32 [firefox] › tests\login-pom.spec.ts:4:5 › login correcto usando Page Object (2.2s)
+  ok 33 [firefox] › tests\login-pom.spec.ts:11:5 › login incorrecto usando Page Object (2.0s)
+  ok 34 [firefox] › tests\login.spec.ts:8:7 › Inicio de sesión › con credenciales válidas entra al catálogo (2.6s)
+  ok 35 [firefox] › tests\login.spec.ts:17:7 › Inicio de sesión › con contraseña incorrecta muestra un mensaje de error (2.2s)
+  ok 37 [firefox] › tests\practica.spec.ts:15:5 › Iniciar sesión con los campos vacíos muestra el mensaje de error (1.8s)
+  ok 36 [firefox] › tests\practica.spec.ts:3:5 › Vaciar carrito deja el contador en 0 sin errores de JavaScript (2.8s)
+  ok 38 [firefox] › tests\practica.spec.ts:22:5 › cada producto de la API tiene nombre y precio mayor que 0 (947ms)
+  ok 39 [firefox] › tests\red-y-visual.spec.ts:3:5 › si la API falla, el catálogo debe avisar al usuario (1.8s)
+A snapshot doesn't exist at C:\Users\user\Documents\labra\tiendaut-playwright\tests\red-y-visual.spec.ts-snapshots\inicio-firefox-win32.png, writing actual.
+  ok 40 [firefox] › tests\red-y-visual.spec.ts:14:5 › la página de inicio se ve igual que la referencia (2.1s)
+  ok 42 [firefox] › tests\regresiones.spec.ts:17:5 › avisa cuando la petición de productos se interrumpe (1.7s)
+(node:6628) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 41 [firefox] › tests\regresiones.spec.ts:3:5 › conserva el filtro escrito antes de que responda la API (5.3s)
+(node:21168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 43 [webkit] › tests\analisis.spec.ts:6:7 › Análisis de calidad del catálogo › no hay errores en la consola del navegador (4.4s)
+  ok 44 [webkit] › tests\analisis.spec.ts:19:7 › Análisis de calidad del catálogo › ninguna petición de red responde con error (2.6s)
+  ok 46 [webkit] › tests\api.spec.ts:3:5 › la API devuelve los 4 productos (947ms)
+  ok 47 [webkit] › tests\carrito.spec.ts:8:7 › Carrito de compras › muestra los 4 productos del catálogo (2.5s)
+  ok 45 [webkit] › tests\analisis.spec.ts:31:7 › Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidad (8.4s)
+  ok 48 [webkit] › tests\carrito.spec.ts:13:7 › Carrito de compras › agregar dos productos actualiza el contador (4.9s)
+  ok 49 [webkit] › tests\carrito.spec.ts:31:7 › Carrito de compras › el buscador filtra los productos (4.6s)
+  ok 50 [webkit] › tests\inicio.spec.ts:3:5 › la página de inicio muestra el título y el encabezado (4.5s)
+  ok 51 [webkit] › tests\inicio.spec.ts:12:5 › el enlace "Iniciar sesión" lleva al formulario (2.9s)
+  ok 52 [webkit] › tests\login-fixture.spec.ts:3:5 › login correcto usando el fixture loginPage (3.1s)
+  ok 53 [webkit] › tests\login-pom.spec.ts:4:5 › login correcto usando Page Object (2.9s)
+  ok 54 [webkit] › tests\login-pom.spec.ts:11:5 › login incorrecto usando Page Object (2.7s)
+  ok 55 [webkit] › tests\login.spec.ts:8:7 › Inicio de sesión › con credenciales válidas entra al catálogo (2.7s)
+  ok 56 [webkit] › tests\login.spec.ts:17:7 › Inicio de sesión › con contraseña incorrecta muestra un mensaje de error (2.6s)
+  ok 58 [webkit] › tests\practica.spec.ts:15:5 › Iniciar sesión con los campos vacíos muestra el mensaje de error (2.2s)
+  ok 57 [webkit] › tests\practica.spec.ts:3:5 › Vaciar carrito deja el contador en 0 sin errores de JavaScript (3.2s)
+  ok 59 [webkit] › tests\practica.spec.ts:22:5 › cada producto de la API tiene nombre y precio mayor que 0 (907ms)
+A snapshot doesn't exist at C:\Users\user\Documents\labra\tiendaut-playwright\tests\red-y-visual.spec.ts-snapshots\inicio-webkit-win32.png, writing actual.
+  ok 60 [webkit] › tests\red-y-visual.spec.ts:3:5 › si la API falla, el catálogo debe avisar al usuario (2.1s)
+  ok 61 [webkit] › tests\red-y-visual.spec.ts:14:5 › la página de inicio se ve igual que la referencia (2.5s)
+  ok 63 [webkit] › tests\regresiones.spec.ts:17:5 › avisa cuando la petición de productos se interrumpe (1.8s)
+  ok 62 [webkit] › tests\regresiones.spec.ts:3:5 › conserva el filtro escrito antes de que responda la API (3.0s)
+
+  63 passed (2.1m)

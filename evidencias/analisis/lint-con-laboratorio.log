@@ -1,0 +1,13 @@
+
+C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts
+   7:3  error  Test has no assertions                     playwright/expect-expect
+  32:3  error  Test has no assertions                     playwright/expect-expect
+  48:5  error  'toBeVisible' must be awaited or returned  playwright/missing-playwright-await
+  51:3  error  Test has no assertions                     playwright/expect-expect
+
+C:\Users\user\Documents\labra\tiendaut-playwright\tests\login-pom.spec.ts
+  11:1  error  Test has no assertions  playwright/expect-expect
+
+✖ 5 problems (5 errors, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+

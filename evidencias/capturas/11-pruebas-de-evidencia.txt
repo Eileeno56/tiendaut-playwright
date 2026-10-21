@@ -1,0 +1,41 @@
+All8
+Passed8
+Failed0
+Flaky0
+Skipped0
+Project: chromium
+15/10/2026, 8:07:19 p.m.
+Total time: 12.4s
+documentacion.spec.ts
+evidencia: agregar y vaciar sin errores JavaScriptchromium
+1.4s
+documentacion.spec.ts:11
+View Trace
+evidencia: filtrar antes de recibir productoschromium
+1.2s
+documentacion.spec.ts:26
+View Trace
+evidencia: login vacío presenta alertachromium
+477ms
+documentacion.spec.ts:38
+View Trace
+evidencia: contrato real de productoschromium
+1.2s
+documentacion.spec.ts:46
+View Trace
+evidencia: API 500 presenta avisochromium
+384ms
+documentacion.spec.ts:63
+View Trace
+evidencia: consola, red y accesibilidad del catálogochromium
+2.2s
+documentacion.spec.ts:70
+View Trace
+evidencia: recorrido completo de accesochromium
+1.7s
+documentacion.spec.ts:89
+View Trace
+evidencia: recorrido completo del carritochromium
+1.7s
+documentacion.spec.ts:104
+View Trace

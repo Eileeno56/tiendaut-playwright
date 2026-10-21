@@ -1,0 +1,558 @@
+All345
+Passed345
+Failed0
+Flaky0
+Skipped0
+15/10/2026, 7:58:08 p.m.
+Total time: 7.2m
+analisis.spec.ts
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorchromium
+13.5s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorchromium
+13.6s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadchromium
+2.3s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorchromium
+1.6s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorchromium
+1.5s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadchromium
+2.6s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorchromium
+1.5s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorchromium
+1.2s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadchromium
+6.8s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorchromium
+1.4s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorchromium
+1.3s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadchromium
+2.1s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorchromium
+1.3s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorchromium
+1.3s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadchromium
+2.0s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorfirefox
+3.7s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorfirefox
+17.1s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadfirefox
+16.3s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorfirefox
+12.0s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorfirefox
+11.9s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadfirefox
+2.8s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorfirefox
+12.2s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorfirefox
+11.3s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadfirefox
+2.9s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorfirefox
+16.2s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorfirefox
+15.5s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadfirefox
+3.1s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorfirefox
+5.1s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorfirefox
+4.9s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadfirefox
+3.0s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorwebkit
+2.2s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorwebkit
+2.5s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadwebkit
+4.5s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorwebkit
+1.8s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorwebkit
+1.7s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadwebkit
+4.0s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorwebkit
+1.9s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorwebkit
+1.7s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadwebkit
+4.2s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorwebkit
+6.0s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorwebkit
+4.2s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadwebkit
+4.9s
+analisis.spec.ts:31
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorwebkit
+1.7s
+analisis.spec.ts:6
+Análisis de calidad del catálogo › ninguna petición de red responde con errorwebkit
+1.8s
+analisis.spec.ts:19
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadwebkit
+4.2s
+analisis.spec.ts:31
+api.spec.ts
+la API devuelve los 4 productoschromium
+887ms
+api.spec.ts:3
+la API devuelve los 4 productoschromium
+862ms
+api.spec.ts:3
+la API devuelve los 4 productoschromium
+1.8s
+api.spec.ts:3
+la API devuelve los 4 productoschromium
+850ms
+api.spec.ts:3
+la API devuelve los 4 productoschromium
+853ms
+api.spec.ts:3
+la API devuelve los 4 productosfirefox
+922ms
+api.spec.ts:3
+la API devuelve los 4 productosfirefox
+1.4s
+api.spec.ts:3
+la API devuelve los 4 productosfirefox
+892ms
+api.spec.ts:3
+la API devuelve los 4 productosfirefox
+1.3s
+api.spec.ts:3
+la API devuelve los 4 productosfirefox
+878ms
+api.spec.ts:3
+la API devuelve los 4 productoswebkit
+1.3s
+api.spec.ts:3
+la API devuelve los 4 productoswebkit
+891ms
+api.spec.ts:3
+la API devuelve los 4 productoswebkit
+863ms
+api.spec.ts:3
+la API devuelve los 4 productoswebkit
+2.3s
+api.spec.ts:3
+la API devuelve los 4 productoswebkit
+869ms
+api.spec.ts:3
+carrito.spec.ts
+Carrito de compras › muestra los 4 productos del catálogochromium
+1.2s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorchromium
+1.3s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoschromium
+1.3s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogochromium
+1.2s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorchromium
+1.4s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoschromium
+1.2s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogochromium
+3.6s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorchromium
+2.4s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoschromium
+1.4s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogochromium
+1.3s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorchromium
+1.3s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoschromium
+1.2s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogochromium
+1.2s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorchromium
+1.3s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoschromium
+1.3s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogofirefox
+1.9s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorfirefox
+2.0s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productosfirefox
+1.9s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogofirefox
+1.8s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorfirefox
+1.8s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productosfirefox
+1.7s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogofirefox
+1.6s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorfirefox
+1.7s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productosfirefox
+1.6s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogofirefox
+1.6s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorfirefox
+1.9s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productosfirefox
+1.8s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogofirefox
+1.6s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorfirefox
+2.0s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productosfirefox
+1.8s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogowebkit
+1.8s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorwebkit
+2.5s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoswebkit
+2.0s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogowebkit
+1.8s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorwebkit
+2.2s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoswebkit
+2.0s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogowebkit
+1.7s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorwebkit
+2.2s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoswebkit
+1.8s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogowebkit
+2.1s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorwebkit
+2.4s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoswebkit
+2.1s
+carrito.spec.ts:31
+Carrito de compras › muestra los 4 productos del catálogowebkit
+1.7s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorwebkit
+2.2s
+carrito.spec.ts:13
+Carrito de compras › el buscador filtra los productoswebkit
+1.8s
+carrito.spec.ts:31
+flujos-completos.spec.ts
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadochromium
+1.9s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritochromium
+1.9s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadochromium
+9.2s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritochromium
+7.7s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadochromium
+3.3s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritochromium
+3.1s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadochromium
+1.6s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritochromium
+1.5s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadochromium
+1.4s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritochromium
+1.4s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadofirefox
+2.3s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritofirefox
+2.3s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadofirefox
+2.1s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritofirefox
+2.2s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadofirefox
+2.3s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritofirefox
+2.3s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadofirefox
+2.5s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritofirefox
+2.4s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadofirefox
+2.2s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritofirefox
+2.2s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadowebkit
+2.9s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritowebkit
+3.2s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadowebkit
+2.7s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritowebkit
+3.2s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadowebkit
+2.7s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritowebkit
+3.3s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadowebkit
+2.9s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritowebkit
+3.4s
+flujos-completos.spec.ts:20
+Flujos críticos completos de TiendaUT › FC-01: desde inicio, iniciar sesión y consultar el catálogo cargadowebkit
+2.9s
+flujos-completos.spec.ts:8
+Flujos críticos completos de TiendaUT › FC-02: desde inicio, buscar, agregar dos productos y vaciar el carritowebkit
+2.7s
+flujos-completos.spec.ts:20
+inicio.spec.ts
+la página de inicio muestra el título y el encabezadochromium
+374ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariochromium
+482ms
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadochromium
+447ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariochromium
+572ms
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadochromium
+358ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariochromium
+2.4s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadochromium
+247ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariochromium
+389ms
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadochromium
+271ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariochromium
+343ms
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadofirefox
+809ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariofirefox
+1.3s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadofirefox
+571ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariofirefox
+934ms
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadofirefox
+840ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariofirefox
+1.1s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadofirefox
+990ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariofirefox
+1.2s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadofirefox
+842ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariofirefox
+1.0s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadowebkit
+815ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariowebkit
+1.3s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadowebkit
+908ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariowebkit
+1.3s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadowebkit
+954ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariowebkit
+1.3s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadowebkit
+885ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariowebkit
+1.2s
+inicio.spec.ts:12
+la página de inicio muestra el título y el encabezadowebkit
+956ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariowebkit
+1.4s
+inicio.spec.ts:12
+login-fixture.spec.ts
+login correcto usando el fixture loginPagechromium
+624ms
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagechromium
+698ms
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagechromium
+4.5s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagechromium
+518ms
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagechromium
+575ms
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagefirefox
+1.3s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagefirefox
+1.1s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagefirefox
+1.4s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagefirefox
+1.3s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagefirefox
+2.2s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagewebkit
+1.2s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagewebkit
+1.3s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagewebkit
+1.3s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagewebkit
+1.3s
+login-fixture.spec.ts:3
+login correcto usando el fixture loginPagewebkit
+1.4s
+login-fixture.spec.ts:3
+login-pom.spec.ts
+login.spec.ts
+practica.spec.ts
+red-y-visual.spec.ts
+regresiones.spec.ts

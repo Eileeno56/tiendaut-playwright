@@ -1,0 +1,267 @@
+--- original/eslint.config.mjs
++++ resuelto/eslint.config.mjs
+@@ -3,9 +3,13 @@
+ import playwright from 'eslint-plugin-playwright';
+ 
+ export default defineConfig([
++  { ignores: ['tests/errores-intencionales.spec.ts'] },
+   {
+     files: ['tests/**/*.ts'],
+     extends: [playwright.configs['flat/recommended']],
+     languageOptions: { parser: tseslint.parser },
++    rules: {
++      'playwright/expect-expect': ['error', { assertFunctionNames: ['esperarError'] }],
++    },
+   },
+ ]);
+--- original/public/login.html
++++ resuelto/public/login.html
+@@ -2,6 +2,7 @@
+ <html lang="es">
+ <head><meta charset="utf-8"><title>Iniciar sesión | TiendaUT</title></head>
+ <body>
++  <main>
+   <h1>Iniciar sesión</h1>
+   <form id="form-login">
+     <label for="usuario">Usuario</label>
+@@ -11,6 +12,7 @@
+     <button type="submit">Entrar</button>
+   </form>
+   <p id="error" role="alert" hidden></p>
++  </main>
+   <script>
+     document.getElementById('form-login').addEventListener('submit', (e) => {
+       e.preventDefault();
+--- original/public/index.html
++++ resuelto/public/index.html
+@@ -6,7 +6,9 @@
+     <a href="/login.html">Iniciar sesión</a>
+     <a href="/catalogo.html">Catálogo</a>
+   </nav>
++  <main>
+   <h1>Bienvenido a TiendaUT</h1>
+   <p>Tu tienda de tecnología universitaria.</p>
++  </main>
+ </body>
+ </html>
+--- original/public/catalogo.html
++++ resuelto/public/catalogo.html
+@@ -2,12 +2,16 @@
+ <html lang="es">
+ <head><meta charset="utf-8"><title>Catálogo | TiendaUT</title></head>
+ <body>
++  <main>
+   <h1>Catálogo</h1>
+   <p>Carrito: <span data-testid="contador-carrito">0</span> productos</p>
++  <label for="buscar">Buscar producto</label>
+   <input placeholder="Buscar producto" id="buscar">
+   <button id="vaciar">Vaciar carrito</button>
+-  <img src="/logo.png">
++  <img src="/logo.png" alt="TiendaUT" width="120" height="40">
++  <p id="error-productos" role="alert" hidden></p>
+   <ul id="lista"><li>Cargando...</li></ul>
++  </main>
+   <script>
+     let carrito = 0;
+     const lista = document.getElementById('lista');
+@@ -31,13 +35,27 @@
+         });
+     }
+ 
+-    fetch('/api/productos').then(r => r.json()).then(data => { productos = data; pintar(); });
++    fetch('/api/productos')
++      .then(r => {
++        if (!r.ok) throw new Error(`HTTP ${r.status}`);
++        return r.json();
++      })
++      .then(data => {
++        productos = data;
++        pintar(document.getElementById('buscar').value);
++      })
++      .catch(() => {
++        productos = [];
++        pintar();
++        const error = document.getElementById('error-productos');
++        error.textContent = 'No pudimos cargar los productos';
++        error.hidden = false;
++      });
+     document.getElementById('buscar').addEventListener('input', e => pintar(e.target.value));
+ 
+-    // BUG INTENCIONAL: la función "reiniciarContador" no existe
+     document.getElementById('vaciar').addEventListener('click', () => {
+       carrito = 0;
+-      reiniciarContador();
++      contador.textContent = String(carrito);
+     });
+   </script>
+ </body>
+--- original/.github/workflows/playwright.yml
++++ resuelto/.github/workflows/playwright.yml
+@@ -12,20 +12,23 @@
+     - uses: actions/checkout@v4
+     - uses: actions/setup-node@v4
+       with:
+-        node-version: lts/*
++        node-version: '24'
++        cache: npm
+     - name: Install dependencies
+       run: npm ci
+     - name: Lint (análisis estático de las pruebas)
+-      # se excluye el laboratorio de errores, que tiene un await olvidado a propósito (E7)
+-      run: npx eslint tests/ --ignore-pattern "tests/errores-intencionales.spec.ts"
++      run: npm run lint
+     - name: Install Playwright Browsers
+       run: npx playwright install --with-deps
+     - name: Run Playwright tests
+       # --update-snapshots=missing: si no existe la imagen de referencia de Linux, la crea en lugar de fallar
+-      run: npm test -- --update-snapshots=missing
++      run: npm run test:estabilidad -- --update-snapshots=missing
+     - uses: actions/upload-artifact@v4
+       if: ${{ !cancelled() }}
+       with:
+         name: playwright-report
+-        path: playwright-report/
++        path: |
++          playwright-report/
++          test-results/
++          tests/red-y-visual.spec.ts-snapshots/
+         retention-days: 30
+--- original/README.md
++++ resuelto/README.md
+@@ -1,50 +1,51 @@
+-# TiendaUT · Práctica de pruebas E2E con Playwright
++# Playwright - dos prácticas con evidencias
+ 
+-Sitio de práctica para la Unidad II de **Gestión del Proceso de Desarrollo de Software**.
+-El sitio **tiene errores a propósito**: su trabajo es encontrarlos con Playwright, analizarlos y corregirlos.
++## Documentos principales
+ 
+-## 1. Instalar
++1. `output/pdf/practica-1-con-evidencias.pdf`: Práctica 1, siete requisitos, laboratorio E1-E8, análisis y correcciones, tres pruebas nuevas, capturas de antes/después, estabilidad y estado de GitHub.
++2. `output/pdf/practica-2-con-evidencias.pdf`: aplicación de los requisitos del mini-proyecto a TiendaUT, matriz de ocho E2E y API, dos recorridos completos, Page Objects, casos negativos, calidad y CI. Se usa TiendaUT como adaptación al único proyecto recibido, según la indicación de trabajar con el ZIP.
++
++La aclaración del estudiante fue documentar **dos prácticas completas**. Cada PDF incluye capturas reales y pies que explican qué se verificó. No se redujo la bitácora obligatoria a dos defectos.
++
++`documentacion/REVISION-DE-REQUISITOS.md` distingue cada requisito realizado de los pendientes externos. El informe anterior de ocho páginas queda en el ZIP de la primera entrega. Este nuevo ZIP incluye solo los dos informes principales y la guía original de referencia.
++
++## Instalar y ejecutar
++
++Node probado: 24.18.0. Playwright: 1.64.1. Credenciales didácticas: alumno / utvm2026.
+ 
+ ```bash
+-npm install
+-npx playwright install     # solo si aún no tienen los navegadores
++npm ci
++npx playwright install
++npm run lint
++npm run test:estabilidad
++npm run test:evidencias
+ ```
+ 
+-## 2. Ejecutar
++Ejecutar las suites una a la vez: cada una inicia su servidor en localhost:3000. Detener antes otros servidores en ese puerto. `npm start` permite abrir el sitio manualmente.
+ 
+-| Comando | Qué hace |
+-|---|---|
+-| `npm start` | Levanta el sitio en http://localhost:3000 (no es necesario para las pruebas: Playwright lo levanta solo) |
+-| `npm test` | Corre toda la suite en Chromium, Firefox y WebKit |
+-| `npm run test:chromium` | Corre la suite solo en Chromium (más rápido) |
+-| `npm run test:ui` | Abre el modo UI (recomendado para analizar) |
+-| `npm run test:laboratorio` | Corre las 8 pruebas que fallan a propósito (E1–E8) |
+-| `npm run report` | Abre el reporte HTML de la última ejecución |
+-| `npm run lint` | Análisis estático de las pruebas con ESLint + eslint-plugin-playwright |
++La suite ampliada tiene 23 casos: cinco repeticiones en tres navegadores son 345 ejecuciones. El archivo `tests/flujos-completos.spec.ts` incorpora los recorridos Inicio > Login > Catálogo e Inicio > Catálogo > Buscar > Agregar dos > Vaciar. Usa LoginPage, CatalogoPage y beforeEach. Se conservan los casos negativos, API, fixture y pruebas de calidad existentes.
+ 
+-## 3. Usuarios de prueba
++## Capturas y reportes reales
+ 
+-- Usuario: `alumno`
+-- Contraseña: `utvm2026`
++`evidencias/capturas/imagenes/` contiene PNG del navegador y del reporte HTML. `playwright.evidencias.config.ts` ejecuta ocho pruebas documentales separadas, adjunta datos reales de API/calidad y guarda trazas. Las capturas se toman después de verificar el estado con aserciones.
+ 
+-## 4. Estructura
+-
+-```
+-server.js                 servidor del sitio (sin dependencias)
+-public/                   páginas del sitio (index, login, catálogo)
+-pages/LoginPage.ts        ejemplo de Page Object Model
+-tests/                    pruebas de Playwright
+-playwright.config.ts      configuración
++```bash
++npx playwright show-report evidencias/laboratorio-original/reporte
++npx playwright show-report evidencias/suite-original/reporte
++npx playwright show-report evidencias/estabilidad-ampliada/reporte
++npx playwright show-report evidencias/capturas/reporte
+ ```
+ 
+-## 5. Integración continua
++`tools/capturar_reportes.cjs` captura la interfaz de los reportes reales. La bitácora detallada y el índice de cada fallo están en documentacion/BITACORA.md e INDICE-EVIDENCIAS.md. `documentacion/RESULTADOS-AMPLIADOS.md` resume la ejecución actual. La entrega inicial de 315 casos y los intentos fallidos se conservan por separado.
+ 
+-`.github/workflows/playwright.yml` ejecuta ESLint (sin el laboratorio de errores) y `npm test` en cada push y pull request, y publica el
+-reporte HTML como artefacto. Mientras el sitio tenga sus defectos, el pipeline estará **en rojo**: es normal.
++## Laboratorio intencional
+ 
+-## 6. Nota sobre la prueba visual
++`npm run test:laboratorio` conserva E1-E8 como ejemplos didácticos separados de la aceptación. Después de corregir el sitio, E6 y E8 pueden pasar. Los ocho fallos originales y sus capturas/trazas se conservaron antes de cambiar el sitio. `npx eslint tests/ --no-ignore` muestra el await deliberadamente ausente en E7.
+ 
+-La primera vez que corran `red-y-visual.spec.ts`, la prueba de captura **fallará a propósito** y
+-guardará la imagen de referencia en `tests/red-y-visual.spec.ts-snapshots/`. Desde la segunda ejecución compara contra ella.
+-Las referencias dependen del sistema operativo (`-win32`, `-darwin`, `-linux`); en GitHub Actions se usa
+-`--update-snapshots=missing` para que la primera ejecución en Linux cree su propia referencia sin fallar.
++## Requisitos externos pendientes
++
++Falta acceso a una cuenta GitHub para publicar un repositorio, comprobar Actions en verde, descargar el artefacto y configurar la protección de rama. El YAML queda preparado; no se simularon capturas de GitHub. Las instrucciones están en documentacion/GITHUB.md.
++
++La guía exige un mini-proyecto del equipo para la Práctica 2. Solo se recibió TiendaUT: la Práctica 2 se aplica y documenta sobre este proyecto. Si el profesor exige otro sistema del equipo, deberá aplicarse a ese sistema. La Práctica 3 pide un sistema integrador y requisitos del cliente que no se proporcionaron; no se declara realizada y no es una de las dos prácticas documentadas.
++
++Las referencias visuales Windows se revisaron. Linux genera las ausentes según la política del ZIP; revisar y aprobar esas imágenes antes de exigir comparación estricta en CI. El margen de aserciones es 20 segundos, justificado en la bitácora tras investigar dos fallos de espera en Firefox.
+--- original/package.json
++++ resuelto/package.json
+@@ -8,7 +8,9 @@
+     "test": "playwright test --grep-invert @laboratorio",
+     "test:ui": "playwright test --ui",
+     "test:chromium": "playwright test --project=chromium --grep-invert @laboratorio",
+-    "test:laboratorio": "playwright test --project=chromium --grep @laboratorio",
++    "test:laboratorio": "playwright test --config=playwright.laboratorio.config.ts",
++    "test:estabilidad": "playwright test --repeat-each=5 --fail-on-flaky-tests",
++    "test:evidencias": "playwright test --config=playwright.evidencias.config.ts",
+     "report": "playwright show-report",
+     "lint": "eslint tests/"
+   },
+--- original/server.js
++++ resuelto/server.js
+@@ -13,7 +13,7 @@
+   { id: 4, nombre: 'Audífonos USB', precio: 459 },
+ ];
+ 
+-const tipos = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml' };
++const tipos = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon' };
+ 
+ http.createServer((req, res) => {
+   if (req.url === '/api/productos') {
+--- original/playwright.config.ts
++++ resuelto/playwright.config.ts
+@@ -2,10 +2,14 @@
+ 
+ export default defineConfig({
+   testDir: './tests',              // carpeta donde viven las pruebas
++  testIgnore: '**/errores-intencionales.spec.ts', // el laboratorio tiene configuración propia
++  workers: 2,
++  timeout: 60_000,
++  expect: { timeout: 20_000 }, // margen para la planificación del navegador en este entorno
+   fullyParallel: true,             // ejecuta pruebas en paralelo
+   forbidOnly: !!process.env.CI,    // en CI falla si alguien dejó un test.only
+   retries: process.env.CI ? 2 : 0, // reintentos solo en CI
+-  reporter: [['html', { open: 'never' }], ['list']],
++  reporter: [['html', { open: 'never' }], ['list'], ['json', { outputFile: process.env.PW_RESULTS_JSON || 'test-results/resumen.json' }]],
+ 
+   use: {
+     baseURL: 'http://localhost:3000', // permite escribir page.goto('/login.html')
+@@ -24,6 +28,6 @@
+   webServer: {
+     command: 'node server.js',
+     url: 'http://localhost:3000',
+-    reuseExistingServer: !process.env.CI,
++    reuseExistingServer: false, // cada ejecución controla el ciclo de vida de su servidor
+   },
+ });

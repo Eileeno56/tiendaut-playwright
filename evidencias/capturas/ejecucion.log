@@ -1,0 +1,15 @@
+
+Running 8 tests using 1 worker
+
+(node:26784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › evidencias\capturas\documentacion.spec.ts:11:5 › evidencia: agregar y vaciar sin errores JavaScript (1.4s)
+  ok 2 [chromium] › evidencias\capturas\documentacion.spec.ts:26:5 › evidencia: filtrar antes de recibir productos (1.2s)
+  ok 3 [chromium] › evidencias\capturas\documentacion.spec.ts:38:5 › evidencia: login vacío presenta alerta (477ms)
+  ok 4 [chromium] › evidencias\capturas\documentacion.spec.ts:46:5 › evidencia: contrato real de productos (1.2s)
+  ok 5 [chromium] › evidencias\capturas\documentacion.spec.ts:63:5 › evidencia: API 500 presenta aviso (384ms)
+  ok 6 [chromium] › evidencias\capturas\documentacion.spec.ts:70:5 › evidencia: consola, red y accesibilidad del catálogo (2.2s)
+  ok 7 [chromium] › evidencias\capturas\documentacion.spec.ts:89:5 › evidencia: recorrido completo de acceso (1.7s)
+  ok 8 [chromium] › evidencias\capturas\documentacion.spec.ts:104:5 › evidencia: recorrido completo del carrito (1.7s)
+
+  8 passed (12.4s)

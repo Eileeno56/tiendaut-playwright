@@ -1,0 +1,351 @@
+
+> tiendaut-playwright@1.0.0 test:laboratorio
+> playwright test --project=chromium --grep @laboratorio --workers=2 --output=evidencias/laboratorio-original/resultados
+
+
+Running 8 tests using 2 workers
+
+(node:22960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 [chromium] › tests\errores-intencionales.spec.ts:13:7 › Laboratorio de errores @laboratorio › E2 - el locator encuentra varios elementos (strict mode) (3.5s)
+(node:9852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [chromium] › tests\errores-intencionales.spec.ts:7:7 › Laboratorio de errores @laboratorio › E1 - el elemento no existe (timeout) (8.8s)
+(node:24812) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 [chromium] › tests\errores-intencionales.spec.ts:19:7 › Laboratorio de errores @laboratorio › E3 - el texto no coincide (Expected vs Received) (6.7s)
+(node:27760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  5 [chromium] › tests\errores-intencionales.spec.ts:32:7 › Laboratorio de errores @laboratorio › E5 - el servidor no está levantado (1.2s)
+  x  4 [chromium] › tests\errores-intencionales.spec.ts:24:7 › Laboratorio de errores @laboratorio › E4 - la URL no es la esperada (10.3s)
+(node:18896) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  7 [chromium] › tests\errores-intencionales.spec.ts:46:7 › Laboratorio de errores @laboratorio › E7 - olvidé el await (2.0s)
+  x  6 [chromium] › tests\errores-intencionales.spec.ts:36:7 › Laboratorio de errores @laboratorio › E6 - el sitio lanza un error de JavaScript (2.9s)
+(node:27796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  8 [chromium] › tests\errores-intencionales.spec.ts:51:7 › Laboratorio de errores @laboratorio › E8 - getByLabel sobre un campo sin etiqueta (19.2s)
+
+
+  1) [chromium] › tests\errores-intencionales.spec.ts:7:7 › Laboratorio de errores @laboratorio › E1 - el elemento no existe (timeout) 
+
+    Test timeout of 8000ms exceeded.
+
+    Error: locator.click: Test timeout of 8000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Comprar ahora' })
+
+
+       8 |     test.setTimeout(8000);
+       9 |     await page.goto('/catalogo.html');
+    > 10 |     await page.getByRole('button', { name: 'Comprar ahora' }).click();
+         |                                                               ^
+      11 |   });
+      12 |
+      13 |   test('E2 - el locator encuentra varios elementos (strict mode)', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:10:63
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-3e774-elemento-no-existe-timeout--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-3e774-elemento-no-existe-timeout--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-3e774-elemento-no-existe-timeout--chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-3e774-elemento-no-existe-timeout--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-3e774-elemento-no-existe-timeout--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\errores-intencionales.spec.ts:13:7 › Laboratorio de errores @laboratorio › E2 - el locator encuentra varios elementos (strict mode) 
+
+    Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Agregar al carrito' }) resolved to 4 elements:
+        1) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Teclado mecánico$899 Agregar' }).getByRole('button')
+        2) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Mouse inalámbrico$349 Agregar' }).getByRole('button')
+        3) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Monitor 24 pulgadas$2799' }).getByRole('button')
+        4) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Audífonos USB$459 Agregar al' }).getByRole('button')
+
+    Call log:
+      - waiting for getByRole('button', { name: 'Agregar al carrito' })
+
+
+      14 |     await page.goto('/catalogo.html');
+      15 |     await expect(page.getByTestId('producto')).toHaveCount(4);
+    > 16 |     await page.getByRole('button', { name: 'Agregar al carrito' }).click();
+         |                                                                    ^
+      17 |   });
+      18 |
+      19 |   test('E3 - el texto no coincide (Expected vs Received)', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:16:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-736c1-rios-elementos-strict-mode--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-736c1-rios-elementos-strict-mode--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-736c1-rios-elementos-strict-mode--chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-736c1-rios-elementos-strict-mode--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-736c1-rios-elementos-strict-mode--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests\errores-intencionales.spec.ts:19:7 › Laboratorio de errores @laboratorio › E3 - el texto no coincide (Expected vs Received) 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByRole('heading', { level: 1 })
+    Expected: "Bienvenidos a TiendaUT"
+    Received: "Bienvenido a TiendaUT"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" getByRole('heading', { level: 1 }) with timeout 5000ms
+      - waiting for getByRole('heading', { level: 1 })
+        14 × locator resolved to <h1>Bienvenido a TiendaUT</h1>
+           - unexpected value "Bienvenido a TiendaUT"
+
+
+      19 |   test('E3 - el texto no coincide (Expected vs Received)', async ({ page }) => {
+      20 |     await page.goto('/');
+    > 21 |     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Bienvenidos a TiendaUT');
+         |                                                           ^
+      22 |   });
+      23 |
+      24 |   test('E4 - la URL no es la esperada', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:21:59
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-a28bb-ncide-Expected-vs-Received--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-a28bb-ncide-Expected-vs-Received--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-a28bb-ncide-Expected-vs-Received--chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-a28bb-ncide-Expected-vs-Received--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-a28bb-ncide-Expected-vs-Received--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests\errores-intencionales.spec.ts:24:7 › Laboratorio de errores @laboratorio › E4 - la URL no es la esperada 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /catalogo\.html/
+    Received string:  "http://localhost:3000/login.html"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        11 × locator resolved to <html lang="es">…</html>
+           - unexpected value "http://localhost:3000/login.html"
+
+
+      27 |     await page.getByLabel('Contraseña').fill('mal');
+      28 |     await page.getByRole('button', { name: 'Entrar' }).click();
+    > 29 |     await expect(page).toHaveURL(/catalogo\.html/);
+         |                        ^
+      30 |   });
+      31 |
+      32 |   test('E5 - el servidor no está levantado', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:29:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-1056a----la-URL-no-es-la-esperada-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-1056a----la-URL-no-es-la-esperada-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-1056a----la-URL-no-es-la-esperada-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-1056a----la-URL-no-es-la-esperada-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-1056a----la-URL-no-es-la-esperada-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests\errores-intencionales.spec.ts:32:7 › Laboratorio de errores @laboratorio › E5 - el servidor no está levantado 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3999/
+    Call log:
+      - navigating to "http://localhost:3999/", waiting until "load"
+
+
+      31 |
+      32 |   test('E5 - el servidor no está levantado', async ({ page }) => {
+    > 33 |     await page.goto('http://localhost:3999/');
+         |                ^
+      34 |   });
+      35 |
+      36 |   test('E6 - el sitio lanza un error de JavaScript', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:33:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2fdcd--servidor-no-está-levantado-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2fdcd--servidor-no-está-levantado-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2fdcd--servidor-no-está-levantado-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2fdcd--servidor-no-está-levantado-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2fdcd--servidor-no-está-levantado-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › tests\errores-intencionales.spec.ts:36:7 › Laboratorio de errores @laboratorio › E6 - el sitio lanza un error de JavaScript 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "reiniciarContador is not defined",
+    + ]
+
+      41 |     await page.getByRole('button', { name: 'Vaciar carrito' }).click();
+      42 |
+    > 43 |     expect(errores).toEqual([]);
+         |                     ^
+      44 |   });
+      45 |
+      46 |   test('E7 - olvidé el await', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:43:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-ac35d-anza-un-error-de-JavaScript-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-ac35d-anza-un-error-de-JavaScript-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-ac35d-anza-un-error-de-JavaScript-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-ac35d-anza-un-error-de-JavaScript-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-ac35d-anza-un-error-de-JavaScript-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › tests\errores-intencionales.spec.ts:46:7 › Laboratorio de errores @laboratorio › E7 - olvidé el await 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'No existe' })
+    Expected: visible
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'No existe' }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'No existe' })
+      - Test ended.
+
+
+      46 |   test('E7 - olvidé el await', async ({ page }) => {
+      47 |     await page.goto('/');
+    > 48 |     expect(page.getByRole('heading', { name: 'No existe' })).toBeVisible(); // sin await
+         |                                                              ^
+      49 |   });
+      50 |
+      51 |   test('E8 - getByLabel sobre un campo sin etiqueta', async ({ page }) => {
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:48:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-59883-atorio-E7---olvidé-el-await-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-59883-atorio-E7---olvidé-el-await-chromium\error-context.md
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-59883-atorio-E7---olvidé-el-await-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-59883-atorio-E7---olvidé-el-await-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-59883-atorio-E7---olvidé-el-await-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [chromium] › tests\errores-intencionales.spec.ts:51:7 › Laboratorio de errores @laboratorio › E8 - getByLabel sobre un campo sin etiqueta 
+
+    Test timeout of 8000ms exceeded.
+
+    Error: locator.fill: Test timeout of 8000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Buscar producto')
+
+
+      52 |     test.setTimeout(8000);
+      53 |     await page.goto('/catalogo.html');
+    > 54 |     await page.getByLabel('Buscar producto').fill('mouse');
+         |                                              ^
+      55 |   });
+      56 | });
+      57 |
+        at C:\Users\user\Documents\labra\tiendaut-playwright\tests\errores-intencionales.spec.ts:54:46
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2adf7-sobre-un-campo-sin-etiqueta-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2adf7-sobre-un-campo-sin-etiqueta-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2adf7-sobre-un-campo-sin-etiqueta-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2adf7-sobre-un-campo-sin-etiqueta-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace evidencias\laboratorio-original\resultados\errores-intencionales-Labo-2adf7-sobre-un-campo-sin-etiqueta-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8 failed
+    [chromium] › tests\errores-intencionales.spec.ts:7:7 › Laboratorio de errores @laboratorio › E1 - el elemento no existe (timeout) 
+    [chromium] › tests\errores-intencionales.spec.ts:13:7 › Laboratorio de errores @laboratorio › E2 - el locator encuentra varios elementos (strict mode) 
+    [chromium] › tests\errores-intencionales.spec.ts:19:7 › Laboratorio de errores @laboratorio › E3 - el texto no coincide (Expected vs Received) 
+    [chromium] › tests\errores-intencionales.spec.ts:24:7 › Laboratorio de errores @laboratorio › E4 - la URL no es la esperada 
+    [chromium] › tests\errores-intencionales.spec.ts:32:7 › Laboratorio de errores @laboratorio › E5 - el servidor no está levantado 
+    [chromium] › tests\errores-intencionales.spec.ts:36:7 › Laboratorio de errores @laboratorio › E6 - el sitio lanza un error de JavaScript 
+    [chromium] › tests\errores-intencionales.spec.ts:46:7 › Laboratorio de errores @laboratorio › E7 - olvidé el await 
+    [chromium] › tests\errores-intencionales.spec.ts:51:7 › Laboratorio de errores @laboratorio › E8 - getByLabel sobre un campo sin etiqueta 

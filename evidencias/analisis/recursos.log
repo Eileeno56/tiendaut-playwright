@@ -1,0 +1,6 @@
+/: HTTP 200; text/html; charset=utf-8; 322 bytes
+/login.html: HTTP 200; text/html; charset=utf-8; 1025 bytes
+/catalogo.html: HTTP 200; text/html; charset=utf-8; 2079 bytes
+/logo.png: HTTP 200; image/png; 4219 bytes
+/favicon.ico: HTTP 200; image/x-icon; 1713 bytes
+/api/productos: HTTP 200; application/json; 206 bytes

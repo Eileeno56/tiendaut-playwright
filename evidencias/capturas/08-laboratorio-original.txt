@@ -1,0 +1,41 @@
+All8
+Passed0
+Failed8
+Flaky0
+Skipped0
+Project: chromium
+15/10/2026, 5:10:09 p.m.
+Total time: 1.1m
+errores-intencionales.spec.ts
+Laboratorio de errores @laboratorio › E1 - el elemento no existe (timeout)chromiumlaboratorio
+8.8s
+errores-intencionales.spec.ts:7
+View Trace
+Laboratorio de errores @laboratorio › E2 - el locator encuentra varios elementos (strict mode)chromiumlaboratorio
+3.5s
+errores-intencionales.spec.ts:13
+View Trace
+Laboratorio de errores @laboratorio › E3 - el texto no coincide (Expected vs Received)chromiumlaboratorio
+6.7s
+errores-intencionales.spec.ts:19
+View Trace
+Laboratorio de errores @laboratorio › E4 - la URL no es la esperadachromiumlaboratorio
+10.3s
+errores-intencionales.spec.ts:24
+View Trace
+Laboratorio de errores @laboratorio › E5 - el servidor no está levantadochromiumlaboratorio
+1.2s
+errores-intencionales.spec.ts:32
+View Trace
+Laboratorio de errores @laboratorio › E6 - el sitio lanza un error de JavaScriptchromiumlaboratorio
+2.9s
+errores-intencionales.spec.ts:36
+View Trace
+Laboratorio de errores @laboratorio › E7 - olvidé el awaitchromiumlaboratorio
+2.0s
+errores-intencionales.spec.ts:46
+View Trace
+Laboratorio de errores @laboratorio › E8 - getByLabel sobre un campo sin etiquetachromiumlaboratorio
+19.2s
+errores-intencionales.spec.ts:51
+View Trace

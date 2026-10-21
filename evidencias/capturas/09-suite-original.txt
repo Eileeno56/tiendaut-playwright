@@ -1,0 +1,81 @@
+All19
+Passed12
+Failed7
+Flaky0
+Skipped0
+Project: chromium
+15/10/2026, 5:11:45 p.m.
+Total time: 1.3m
+analisis.spec.ts
+Análisis de calidad del catálogo › no hay errores en la consola del navegadorchromium
+11.9s
+analisis.spec.ts:6
+View Trace
+Análisis de calidad del catálogo › ninguna petición de red responde con errorchromium
+22.4s
+analisis.spec.ts:19
+View Trace
+Análisis de calidad del catálogo › la página no tiene violaciones de accesibilidadchromium
+10.6s
+analisis.spec.ts:31
+View Trace
+red-y-visual.spec.ts
+si la API falla, el catálogo debe avisar al usuariochromium
+5.9s
+red-y-visual.spec.ts:3
+View Trace
+la página de inicio se ve igual que la referenciachromium
+1.3s
+red-y-visual.spec.ts:14
+View Trace
+carrito.spec.ts
+Carrito de compras › el buscador filtra los productoschromium
+6.2s
+carrito.spec.ts:31
+View Trace
+Carrito de compras › muestra los 4 productos del catálogochromium
+5.6s
+carrito.spec.ts:8
+Carrito de compras › agregar dos productos actualiza el contadorchromium
+1.7s
+carrito.spec.ts:13
+practica.spec.ts
+Vaciar carrito deja el contador en 0 sin errores de JavaScriptchromium
+7.0s
+practica.spec.ts:3
+View Trace
+Iniciar sesión con los campos vacíos muestra el mensaje de errorchromium
+738ms
+practica.spec.ts:15
+cada producto de la API tiene nombre y precio mayor que 0chromium
+919ms
+practica.spec.ts:22
+api.spec.ts
+la API devuelve los 4 productoschromium
+3.0s
+api.spec.ts:3
+inicio.spec.ts
+la página de inicio muestra el título y el encabezadochromium
+480ms
+inicio.spec.ts:3
+el enlace "Iniciar sesión" lleva al formulariochromium
+723ms
+inicio.spec.ts:12
+login-fixture.spec.ts
+login correcto usando el fixture loginPagechromium
+940ms
+login-fixture.spec.ts:3
+login-pom.spec.ts
+login correcto usando Page Objectchromium
+784ms
+login-pom.spec.ts:4
+login incorrecto usando Page Objectchromium
+808ms
+login-pom.spec.ts:11
+login.spec.ts
+Inicio de sesión › con credenciales válidas entra al catálogochromium
+766ms
+login.spec.ts:8
+Inicio de sesión › con contraseña incorrecta muestra un mensaje de errorchromium
+670ms
+login.spec.ts:17

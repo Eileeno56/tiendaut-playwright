@@ -1,0 +1,6958 @@
+[
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-1056a----la-URL-no-es-la-esperada-chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "chwx@1",
+        "startTime": 26654.852,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@30",
+        "parentId": "chwx@1",
+        "startTime": 26700.186,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@31",
+        "parentId": "chwx@30",
+        "startTime": 26708.23,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@31",
+        "endTime": 27371.296,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@30",
+        "endTime": 27371.733,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@34",
+        "parentId": "chwx@1",
+        "startTime": 27376.768,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@35",
+        "parentId": "chwx@34",
+        "startTime": 27381.136,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@35",
+        "endTime": 27403.834,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@34",
+        "endTime": 27427.671,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@42",
+        "parentId": "chwx@1",
+        "startTime": 27428.601,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@43",
+        "parentId": "chwx@42",
+        "startTime": 27430.964,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@43",
+        "endTime": 27795.641,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@42",
+        "endTime": 27795.868,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@1",
+        "endTime": 27796.047,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@45",
+        "startTime": 27800.976,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/login.html",
+        "params": {
+          "url": "/login.html"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 25,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "chwx@45",
+        "endTime": 27973.629,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@47",
+        "startTime": 27981.584,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Fill \"alumno\"",
+        "subtitle": "getByLabel('Usuario')",
+        "params": {
+          "locator": "getByLabel('Usuario')",
+          "value": "alumno"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 26,
+            "column": 38
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "chwx@47",
+        "endTime": 28217.789,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@49",
+        "startTime": 28220.379,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Fill \"mal\"",
+        "subtitle": "getByLabel('Contraseña')",
+        "params": {
+          "locator": "getByLabel('Contraseña')",
+          "value": "mal"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 27,
+            "column": 41
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "chwx@49",
+        "endTime": 28283.625,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@51",
+        "startTime": 28288.872,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Click",
+        "subtitle": "getByRole('button', { name: 'Entrar' })",
+        "params": {
+          "locator": "getByRole('button', { name: 'Entrar' })"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 28,
+            "column": 56
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "chwx@51",
+        "endTime": 28470.546,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@53",
+        "startTime": 28483.428,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toHaveURL\"",
+        "params": {
+          "expected": "Object"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 29,
+            "column": 24
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "chwx@53",
+        "endTime": 36165.065,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/catalogo\\.html/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:3000/login.html\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    11 × locator resolved to <html lang=\"es\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/login.html\"\u001b[22m\n",
+          "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/catalogo\\.html/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:3000/login.html\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    11 × locator resolved to <html lang=\"es\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/login.html\"\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:29:24"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "chwx@55",
+        "startTime": 36170.854,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@57",
+        "parentId": "chwx@55",
+        "startTime": 36350.665,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@57",
+        "endTime": 36351.191,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@58",
+        "parentId": "chwx@55",
+        "startTime": 36352.299,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@64",
+        "parentId": "chwx@58",
+        "startTime": 36647.685,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@64",
+        "endTime": 37646.124,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@58",
+        "endTime": 37654.916,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/023fb20b65e08ef8c9902a68b87cf30efceff3f6"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@72",
+        "startTime": 37670.309,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@72",
+        "endTime": 37670.342,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/b13cb9772b5184d2036efb888c91fa62f502201b"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "chwx@75",
+        "parentId": "chwx@55",
+        "startTime": 37672.228,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@75",
+        "endTime": 37672.336,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@76",
+        "parentId": "chwx@55",
+        "startTime": 37672.375,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@76",
+        "endTime": 37672.419,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@78",
+        "parentId": "chwx@55",
+        "startTime": 37683.91,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@78",
+        "endTime": 37683.981,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@80",
+        "parentId": "chwx@55",
+        "startTime": 37686.026,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@80",
+        "endTime": 37686.088,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@87",
+        "parentId": "chwx@55",
+        "startTime": 37691.322,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@87",
+        "endTime": 37691.384,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@91",
+        "parentId": "chwx@55",
+        "startTime": 37694.103,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@91",
+        "endTime": 37694.178,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@94",
+        "parentId": "chwx@55",
+        "startTime": 37699.737,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@94",
+        "endTime": 37699.808,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@55",
+        "endTime": 37704.447,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/bf5948db8d34e66e7ad6a5d63ebbc28284aa76d2"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@101",
+        "startTime": 37705.065,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@105",
+        "parentId": "chwx@101",
+        "startTime": 37708.007,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@105",
+        "endTime": 37708.09,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@106",
+        "parentId": "chwx@101",
+        "startTime": 37708.892,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@106",
+        "endTime": 37859.752,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@111",
+        "parentId": "chwx@101",
+        "startTime": 37861.599,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@111",
+        "endTime": 37861.628,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@112",
+        "parentId": "chwx@101",
+        "startTime": 37861.641,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "chwx@112",
+        "endTime": 37861.665,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "chwx@101",
+        "endTime": 37864.206,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "chwx@43",
+        "startTime": 27432.565,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "event",
+        "time": 27789.456,
+        "class": "BrowserContext",
+        "method": "page",
+        "params": {
+          "pageId": "page@9b13d1f0c756094ed4b15c5ae096a4af"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "chwx@43",
+        "endTime": 27789.954,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "chwx@45",
+        "startTime": 27803.059,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/login.html",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "chwx@45",
+        "endTime": 27929.4,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "chwx@47",
+        "startTime": 27983.485,
+        "class": "Frame",
+        "method": "fill",
+        "params": {
+          "selector": "internal:label=\"Usuario\"i",
+          "strict": true,
+          "value": "alumno"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "chwx@47",
+        "endTime": 28202.565
+      },
+      {
+        "type": "before",
+        "callId": "chwx@49",
+        "startTime": 28229.698,
+        "class": "Frame",
+        "method": "fill",
+        "params": {
+          "selector": "internal:label=\"Contraseña\"i",
+          "strict": true,
+          "value": "mal"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "chwx@49",
+        "endTime": 28277.481
+      },
+      {
+        "type": "before",
+        "callId": "chwx@51",
+        "startTime": 28290.686,
+        "class": "Frame",
+        "method": "click",
+        "params": {
+          "selector": "internal:role=button[name=\"Entrar\"i]",
+          "strict": true
+        }
+      },
+      {
+        "type": "after",
+        "callId": "chwx@51",
+        "endTime": 28465.78
+      },
+      {
+        "type": "before",
+        "callId": "chwx@53",
+        "startTime": 28490.392,
+        "title": "Expect \"toHaveURL\"",
+        "class": "Frame",
+        "method": "expect",
+        "params": {
+          "expression": "to.have.url",
+          "expectedText": [
+            {
+              "regexSource": "catalogo\\.html",
+              "regexFlags": ""
+            }
+          ],
+          "expectedValue": {
+            "value": {
+              "v": "undefined"
+            },
+            "handles": []
+          },
+          "isNot": false,
+          "timeout": 5000
+        }
+      },
+      {
+        "type": "after",
+        "callId": "chwx@53",
+        "endTime": 33508.417,
+        "error": {
+          "message": "Expect failed",
+          "stack": "ExpectError: Expect failed\n    at _Frame.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25606:17)\n    at _FrameDispatcher.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:56333:11)\n    at _ProgressController.run (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:13018:27)\n    at DispatcherConnection.dispatch (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:20191:27)",
+          "name": "ExpectError"
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@9b13d1f0c756094ed4b15c5ae096a4af",
+          "startedDateTime": "2026-10-15T23:10:32.082Z",
+          "time": 41.551,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/login.html",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 676,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:32 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 1006,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/df7990b938b9343e93f256d4515e10b3343587e9.html"
+            },
+            "headersSize": 171,
+            "bodySize": 1018,
+            "redirectURL": "",
+            "_transferSize": 1189
+          },
+          "cache": {},
+          "timings": {
+            "dns": 4.996,
+            "connect": 3.194,
+            "ssl": 10.082,
+            "send": 0,
+            "wait": 18.927,
+            "receive": 4.352
+          },
+          "_frameref": "frame@8905f6173b3d631570008fcc90cfa3a9",
+          "_monotonicTime": 27832.761,
+          "_resourceType": "document",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-2adf7-sobre-un-campo-sin-etiqueta-chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "ondj@1",
+        "startTime": 47236.69,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@30",
+        "parentId": "ondj@1",
+        "startTime": 47283.114,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@31",
+        "parentId": "ondj@30",
+        "startTime": 47292.784,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@31",
+        "endTime": 47905.623,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@30",
+        "endTime": 47906.11,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@34",
+        "parentId": "ondj@1",
+        "startTime": 47912.114,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@35",
+        "parentId": "ondj@34",
+        "startTime": 47917.829,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@35",
+        "endTime": 47946.106,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@34",
+        "endTime": 47970.925,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@42",
+        "parentId": "ondj@1",
+        "startTime": 47973.274,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@43",
+        "parentId": "ondj@42",
+        "startTime": 47983.503,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@43",
+        "endTime": 48359.759,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@42",
+        "endTime": 48359.951,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@1",
+        "endTime": 48360.134,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@45",
+        "startTime": 48364.517,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/catalogo.html",
+        "params": {
+          "url": "/catalogo.html"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 53,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "ondj@45",
+        "endTime": 48544.033,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@47",
+        "startTime": 48553.962,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Fill \"mouse\"",
+        "subtitle": "getByLabel('Buscar producto')",
+        "params": {
+          "locator": "getByLabel('Buscar producto')",
+          "value": "mouse"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 54,
+            "column": 46
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "ondj@49",
+        "startTime": 55914.038,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@51",
+        "parentId": "ondj@49",
+        "startTime": 56049.125,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@51",
+        "endTime": 56049.848,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@52",
+        "parentId": "ondj@49",
+        "startTime": 56051.191,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@59",
+        "parentId": "ondj@52",
+        "startTime": 64716.003,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@47",
+        "endTime": 67106.024,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: locator.fill: Test timeout of 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Buscar producto')\u001b[22m\n",
+          "stack": "Error: locator.fill: Test timeout of 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Buscar producto')\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:54:46"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "ondj@59",
+        "endTime": 67110.632,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@52",
+        "endTime": 67122.682,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/af48d5f138f5b869702929f117c2757a191e418d"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@67",
+        "startTime": 67140.118,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@67",
+        "endTime": 67140.163,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/769d40e0246ebdf1e2a0c0ef2065dccfd6e15197"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "ondj@70",
+        "parentId": "ondj@49",
+        "startTime": 67142.999,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@70",
+        "endTime": 67143.126,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@71",
+        "parentId": "ondj@49",
+        "startTime": 67143.184,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@71",
+        "endTime": 67143.256,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@73",
+        "parentId": "ondj@49",
+        "startTime": 67144.25,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@73",
+        "endTime": 67144.318,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@75",
+        "parentId": "ondj@49",
+        "startTime": 67145.433,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@75",
+        "endTime": 67145.509,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@82",
+        "parentId": "ondj@49",
+        "startTime": 67150.251,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@82",
+        "endTime": 67150.323,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@86",
+        "parentId": "ondj@49",
+        "startTime": 67153.079,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@86",
+        "endTime": 67153.222,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@89",
+        "parentId": "ondj@49",
+        "startTime": 67155.531,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@89",
+        "endTime": 67155.603,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@49",
+        "endTime": 67166.395,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/419a0ca4dbe84018848be372701805d0fed2a18c"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@96",
+        "startTime": 67167.92,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@100",
+        "parentId": "ondj@96",
+        "startTime": 67171.942,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@100",
+        "endTime": 67171.992,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@101",
+        "parentId": "ondj@96",
+        "startTime": 67172.712,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@101",
+        "endTime": 67667.433,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@106",
+        "parentId": "ondj@96",
+        "startTime": 67669.598,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@106",
+        "endTime": 67669.657,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@107",
+        "parentId": "ondj@96",
+        "startTime": 67669.677,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@107",
+        "endTime": 67669.71,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ondj@96",
+        "endTime": 67673.554,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ondj@43",
+        "startTime": 47987.718,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "event",
+        "time": 48353.594,
+        "class": "BrowserContext",
+        "method": "page",
+        "params": {
+          "pageId": "page@1927b44ff76064cac2b34af4fd4d655d"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "ondj@43",
+        "endTime": 48353.893,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "ondj@45",
+        "startTime": 48366.277,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/catalogo.html",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "console",
+        "messageType": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "args": [],
+        "location": {
+          "url": "http://localhost:3000/logo.png",
+          "lineNumber": 0,
+          "columnNumber": 0
+        },
+        "time": 48489.917,
+        "pageId": "page@1927b44ff76064cac2b34af4fd4d655d"
+      },
+      {
+        "type": "after",
+        "callId": "ondj@45",
+        "endTime": 48527.3,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "ondj@47",
+        "startTime": 48555.208,
+        "class": "Frame",
+        "method": "fill",
+        "params": {
+          "selector": "internal:label=\"Buscar producto\"i",
+          "strict": true,
+          "value": "mouse"
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@1927b44ff76064cac2b34af4fd4d655d",
+          "startedDateTime": "2026-10-15T23:10:52.644Z",
+          "time": 46.501000000000005,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/catalogo.html",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 679,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:52 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 1583,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/9cf21b62b78561dd377083b578089ced6832c5c9.html"
+            },
+            "headersSize": 171,
+            "bodySize": 1595,
+            "redirectURL": "",
+            "_transferSize": 1766
+          },
+          "cache": {},
+          "timings": {
+            "dns": 5.214,
+            "connect": 6.572,
+            "ssl": 13.852,
+            "send": 0,
+            "wait": 16.158,
+            "receive": 4.705
+          },
+          "_frameref": "frame@08a1d8e97286e546d1aaa2fcd627ecae",
+          "_monotonicTime": 48394.912,
+          "_resourceType": "document",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@1927b44ff76064cac2b34af4fd4d655d",
+          "startedDateTime": "2026-10-15T23:10:52.695Z",
+          "time": 39.257,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/logo.png",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "image"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "no-cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 602,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 404,
+            "statusText": "Not Found",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:52 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 13,
+              "mimeType": "x-unknown",
+              "compression": 0,
+              "_file": "resources/9271b47f7ce27125514eeccb30beeda5cdfe71b4.dat"
+            },
+            "headersSize": 138,
+            "bodySize": 23,
+            "redirectURL": "",
+            "_transferSize": 161
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 33.474,
+            "receive": 5.783
+          },
+          "_frameref": "frame@08a1d8e97286e546d1aaa2fcd627ecae",
+          "_monotonicTime": 48458.515,
+          "_resourceType": "image",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@1927b44ff76064cac2b34af4fd4d655d",
+          "startedDateTime": "2026-10-15T23:10:52.712Z",
+          "time": 833.2779999999999,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/api/productos",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 533,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:53 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 206,
+              "mimeType": "application/json",
+              "compression": 0,
+              "_file": "resources/f5fbb5c88ceba7521b5c73b03d7a39a85abd7b55.json"
+            },
+            "headersSize": 163,
+            "bodySize": 217,
+            "redirectURL": "",
+            "_transferSize": 380
+          },
+          "cache": {},
+          "timings": {
+            "dns": 0.021,
+            "connect": 1.504,
+            "ssl": 2.823,
+            "send": 0,
+            "wait": 823.543,
+            "receive": 5.387
+          },
+          "_frameref": "frame@08a1d8e97286e546d1aaa2fcd627ecae",
+          "_monotonicTime": 48469.472,
+          "_resourceType": "fetch",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-2fdcd--servidor-no-está-levantado-chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "gxvs@1",
+        "startTime": 29479.15,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@30",
+        "parentId": "gxvs@1",
+        "startTime": 29500.565,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@31",
+        "parentId": "gxvs@30",
+        "startTime": 29504.267,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@31",
+        "endTime": 36429.453,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@30",
+        "endTime": 36429.862,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@34",
+        "parentId": "gxvs@1",
+        "startTime": 36434.998,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@35",
+        "parentId": "gxvs@34",
+        "startTime": 36439.377,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@35",
+        "endTime": 36475.453,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@34",
+        "endTime": 36499.296,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@42",
+        "parentId": "gxvs@1",
+        "startTime": 36500.419,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@43",
+        "parentId": "gxvs@42",
+        "startTime": 36503.055,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@43",
+        "endTime": 36843.781,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@42",
+        "endTime": 36843.971,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@1",
+        "endTime": 36844.145,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@45",
+        "startTime": 36848.272,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "localhost:3999/",
+        "params": {
+          "url": "http://localhost:3999/"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 33,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@45",
+        "endTime": 37097.157,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3999/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3999/\", waiting until \"load\"\u001b[22m\n",
+          "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3999/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3999/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:33:16"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@47",
+        "startTime": 37099.309,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@49",
+        "parentId": "gxvs@47",
+        "startTime": 37219.453,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@49",
+        "endTime": 37220.077,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@50",
+        "parentId": "gxvs@47",
+        "startTime": 37221.151,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@57",
+        "parentId": "gxvs@50",
+        "startTime": 37413.65,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@57",
+        "endTime": 37640.719,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@50",
+        "endTime": 37648.186,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/e1301f7923a74750a95a856f7e00e391c5222363"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@65",
+        "startTime": 37659.415,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@65",
+        "endTime": 37659.442,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/e26db77f231b1fde663e946d5622ade0d8bb5bb1"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@68",
+        "parentId": "gxvs@47",
+        "startTime": 37661.57,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@68",
+        "endTime": 37661.638,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@69",
+        "parentId": "gxvs@47",
+        "startTime": 37661.67,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@69",
+        "endTime": 37661.713,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@71",
+        "parentId": "gxvs@47",
+        "startTime": 37662.515,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@71",
+        "endTime": 37662.566,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@73",
+        "parentId": "gxvs@47",
+        "startTime": 37663.414,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@73",
+        "endTime": 37663.469,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@80",
+        "parentId": "gxvs@47",
+        "startTime": 37668.609,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@80",
+        "endTime": 37668.664,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@84",
+        "parentId": "gxvs@47",
+        "startTime": 37671.12,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@84",
+        "endTime": 37671.175,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@87",
+        "parentId": "gxvs@47",
+        "startTime": 37672.666,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@87",
+        "endTime": 37672.718,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@47",
+        "endTime": 37678.899,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/78485ad26ab49de2007fe98b0854715a58aaf5b6"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@94",
+        "startTime": 37679.943,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@98",
+        "parentId": "gxvs@94",
+        "startTime": 37683.093,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@98",
+        "endTime": 37683.149,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@99",
+        "parentId": "gxvs@94",
+        "startTime": 37684.202,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@99",
+        "endTime": 37835.685,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@104",
+        "parentId": "gxvs@94",
+        "startTime": 37837.6,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@104",
+        "endTime": 37837.65,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@105",
+        "parentId": "gxvs@94",
+        "startTime": 37837.669,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@105",
+        "endTime": 37837.706,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@94",
+        "endTime": 37840.404,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@43",
+        "startTime": 36506.678,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "event",
+        "time": 36837.729,
+        "class": "BrowserContext",
+        "method": "page",
+        "params": {
+          "pageId": "page@5b02227cea3c402f63b91230dced6158"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@43",
+        "endTime": 36838.07,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "gxvs@45",
+        "startTime": 36850.077,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "http://localhost:3999/",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "gxvs@45",
+        "endTime": 36914.741,
+        "error": {
+          "message": "net::ERR_CONNECTION_REFUSED at http://localhost:3999/",
+          "stack": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3999/\n    at _FrameSession._navigate (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:39090:17)\n    at _Frame.gotoImpl (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:24916:28)",
+          "name": "Error"
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@5b02227cea3c402f63b91230dced6158",
+          "startedDateTime": "2026-10-15T23:10:41.126Z",
+          "time": 19.707000000002154,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3999/",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": -1,
+            "bodySize": 0
+          },
+          "response": {
+            "status": -1,
+            "statusText": "",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [],
+            "content": {
+              "size": -1,
+              "mimeType": "x-unknown"
+            },
+            "headersSize": -1,
+            "bodySize": -1,
+            "redirectURL": "",
+            "_transferSize": -1,
+            "_failureText": "net::ERR_CONNECTION_REFUSED"
+          },
+          "cache": {},
+          "timings": {
+            "send": -1,
+            "wait": -1,
+            "receive": -1
+          },
+          "_frameref": "frame@3b0737511853ef51db55fa9a0c1c89a5",
+          "_monotonicTime": 36882.047,
+          "_resourceType": "document"
+        }
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-3e774-elemento-no-existe-timeout--chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "foel@1",
+        "startTime": 12628.696,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@30",
+        "parentId": "foel@1",
+        "startTime": 12663.668,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@31",
+        "parentId": "foel@30",
+        "startTime": 12667.71,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@31",
+        "endTime": 14177.027,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@30",
+        "endTime": 14177.52,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@34",
+        "parentId": "foel@1",
+        "startTime": 14183.281,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@35",
+        "parentId": "foel@34",
+        "startTime": 14188.006,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@35",
+        "endTime": 14227.053,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@34",
+        "endTime": 14258.833,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@42",
+        "parentId": "foel@1",
+        "startTime": 14259.885,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@43",
+        "parentId": "foel@42",
+        "startTime": 14262.743,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@43",
+        "endTime": 15344.636,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@42",
+        "endTime": 15344.856,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@1",
+        "endTime": 15345.037,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@45",
+        "startTime": 15349.302,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/catalogo.html",
+        "params": {
+          "url": "/catalogo.html"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 9,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "foel@45",
+        "endTime": 16075.698,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@47",
+        "startTime": 16085.9,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Click",
+        "subtitle": "getByRole('button', { name: 'Comprar ahora' })",
+        "params": {
+          "locator": "getByRole('button', { name: 'Comprar ahora' })"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 10,
+            "column": 63
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "foel@49",
+        "startTime": 22187.667,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@51",
+        "parentId": "foel@49",
+        "startTime": 22279.145,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@51",
+        "endTime": 22279.619,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@52",
+        "parentId": "foel@49",
+        "startTime": 22280.678,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@59",
+        "parentId": "foel@52",
+        "startTime": 22522.756,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@47",
+        "endTime": 23000.411,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: locator.click: Test timeout of 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Comprar ahora' })\u001b[22m\n",
+          "stack": "Error: locator.click: Test timeout of 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Comprar ahora' })\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:10:63"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "foel@59",
+        "endTime": 23003.8,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@52",
+        "endTime": 23011.847,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/dc9a909798c680abe20fb3b9bf55c7c9f3b962e8"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@67",
+        "startTime": 23023.67,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@67",
+        "endTime": 23023.699,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/edc7cbd51a3ddcb3263a103d2c219f7241d05c73"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "foel@70",
+        "parentId": "foel@49",
+        "startTime": 23025.562,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@70",
+        "endTime": 23025.606,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@71",
+        "parentId": "foel@49",
+        "startTime": 23025.629,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@71",
+        "endTime": 23025.662,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@73",
+        "parentId": "foel@49",
+        "startTime": 23026.54,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@73",
+        "endTime": 23026.6,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@75",
+        "parentId": "foel@49",
+        "startTime": 23027.426,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@75",
+        "endTime": 23027.477,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@82",
+        "parentId": "foel@49",
+        "startTime": 23032.378,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@82",
+        "endTime": 23032.513,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@86",
+        "parentId": "foel@49",
+        "startTime": 23036.232,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@86",
+        "endTime": 23036.519,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@89",
+        "parentId": "foel@49",
+        "startTime": 23038.24,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@89",
+        "endTime": 23038.279,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@49",
+        "endTime": 23045.868,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/419a0ca4dbe84018848be372701805d0fed2a18c"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@96",
+        "startTime": 23047.071,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@100",
+        "parentId": "foel@96",
+        "startTime": 23049.853,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@100",
+        "endTime": 23049.906,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@101",
+        "parentId": "foel@96",
+        "startTime": 23050.687,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@101",
+        "endTime": 23212.559,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@106",
+        "parentId": "foel@96",
+        "startTime": 23215.603,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@106",
+        "endTime": 23215.661,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@107",
+        "parentId": "foel@96",
+        "startTime": 23215.682,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "foel@107",
+        "endTime": 23215.721,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "foel@96",
+        "endTime": 23220.067,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "foel@43",
+        "startTime": 14265.707,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "event",
+        "time": 15337.823,
+        "class": "BrowserContext",
+        "method": "page",
+        "params": {
+          "pageId": "page@ae612bd32c61af8882a2fcc3ccdb7f87"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "foel@43",
+        "endTime": 15338.132,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "foel@45",
+        "startTime": 15351.056,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/catalogo.html",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "console",
+        "messageType": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "args": [],
+        "location": {
+          "url": "http://localhost:3000/logo.png",
+          "lineNumber": 0,
+          "columnNumber": 0
+        },
+        "time": 15759.379,
+        "pageId": "page@ae612bd32c61af8882a2fcc3ccdb7f87"
+      },
+      {
+        "type": "after",
+        "callId": "foel@45",
+        "endTime": 16020.624,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "foel@47",
+        "startTime": 16086.961,
+        "class": "Frame",
+        "method": "click",
+        "params": {
+          "selector": "internal:role=button[name=\"Comprar ahora\"i]",
+          "strict": true
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@ae612bd32c61af8882a2fcc3ccdb7f87",
+          "startedDateTime": "2026-10-15T23:10:19.993Z",
+          "time": 18.267,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/logo.png",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "image"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "no-cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 602,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 404,
+            "statusText": "Not Found",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:20 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 13,
+              "mimeType": "x-unknown",
+              "compression": 0,
+              "_file": "resources/9271b47f7ce27125514eeccb30beeda5cdfe71b4.dat"
+            },
+            "headersSize": 138,
+            "bodySize": 23,
+            "redirectURL": "",
+            "_transferSize": 161
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 6.564,
+            "receive": 11.703
+          },
+          "_frameref": "frame@61bc544b042c74ab9056df8dca37641f",
+          "_monotonicTime": 15751.187,
+          "_resourceType": "image",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@ae612bd32c61af8882a2fcc3ccdb7f87",
+          "startedDateTime": "2026-10-15T23:10:19.704Z",
+          "time": 156.464,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/catalogo.html",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 679,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:19 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 1583,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/9cf21b62b78561dd377083b578089ced6832c5c9.html"
+            },
+            "headersSize": 171,
+            "bodySize": 1595,
+            "redirectURL": "",
+            "_transferSize": 1766
+          },
+          "cache": {},
+          "timings": {
+            "dns": 9.09,
+            "connect": 10.334,
+            "ssl": 43.428,
+            "send": 0,
+            "wait": 47.144,
+            "receive": 46.468
+          },
+          "_frameref": "frame@61bc544b042c74ab9056df8dca37641f",
+          "_monotonicTime": 15454.028,
+          "_resourceType": "document",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@ae612bd32c61af8882a2fcc3ccdb7f87",
+          "startedDateTime": "2026-10-15T23:10:20.204Z",
+          "time": 824.2620000000001,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/api/productos",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 533,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:21 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 206,
+              "mimeType": "application/json",
+              "compression": 0,
+              "_file": "resources/f5fbb5c88ceba7521b5c73b03d7a39a85abd7b55.json"
+            },
+            "headersSize": 163,
+            "bodySize": 217,
+            "redirectURL": "",
+            "_transferSize": 380
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 820.767,
+            "receive": 3.495
+          },
+          "_frameref": "frame@61bc544b042c74ab9056df8dca37641f",
+          "_monotonicTime": 15958.425,
+          "_resourceType": "fetch",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-59883-atorio-E7---olvidé-el-await-chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "oymu@1",
+        "startTime": 40204.941,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@30",
+        "parentId": "oymu@1",
+        "startTime": 40258.629,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@31",
+        "parentId": "oymu@30",
+        "startTime": 40268.157,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@31",
+        "endTime": 41171.285,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@30",
+        "endTime": 41171.633,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@34",
+        "parentId": "oymu@1",
+        "startTime": 41177.065,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@35",
+        "parentId": "oymu@34",
+        "startTime": 41184.157,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@35",
+        "endTime": 41211.056,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@34",
+        "endTime": 41325.732,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@42",
+        "parentId": "oymu@1",
+        "startTime": 41329.918,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@43",
+        "parentId": "oymu@42",
+        "startTime": 41371.237,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@43",
+        "endTime": 41880.81,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@42",
+        "endTime": 41880.977,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@1",
+        "endTime": 41881.165,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@45",
+        "startTime": 41885.698,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/",
+        "params": {
+          "url": "/"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 47,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "oymu@45",
+        "endTime": 42069.838,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@47",
+        "startTime": 42092.818,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toBeVisible\"",
+        "subtitle": "getByRole('heading', { name: 'No existe' })",
+        "params": {
+          "locator": "getByRole('heading', { name: 'No existe' })"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 48,
+            "column": 62
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "oymu@49",
+        "startTime": 42099.244,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@50",
+        "parentId": "oymu@49",
+        "startTime": 42104.805,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@50",
+        "endTime": 42105.658,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@51",
+        "parentId": "oymu@49",
+        "startTime": 42108.821,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@58",
+        "parentId": "oymu@51",
+        "startTime": 42471.438,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@47",
+        "endTime": 43157.69,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'No existe' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'No existe' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'No existe' })\u001b[22m\n\u001b[2m  - Test ended.\u001b[22m\n",
+          "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'No existe' })\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'No existe' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'No existe' })\u001b[22m\n\u001b[2m  - Test ended.\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:48:62"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "oymu@51",
+        "endTime": 43159.758,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m",
+          "stack": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "oymu@65",
+        "startTime": 43248.029,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"screenshot\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@65",
+        "endTime": 43248.111,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/93813ac073d2cfa7c25e4789c6e5cb5a699f6cbf"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "oymu@67",
+        "startTime": 43268.755,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@67",
+        "endTime": 43268.776,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/ff658a0f278252dc8f7fcc10ccc1134375814b27"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "oymu@70",
+        "parentId": "oymu@49",
+        "startTime": 43298.438,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@70",
+        "endTime": 43298.509,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@71",
+        "parentId": "oymu@49",
+        "startTime": 43298.625,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@71",
+        "endTime": 43298.685,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@73",
+        "parentId": "oymu@49",
+        "startTime": 43299.565,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@73",
+        "endTime": 43299.614,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@75",
+        "parentId": "oymu@49",
+        "startTime": 43300.699,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@75",
+        "endTime": 43300.767,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@82",
+        "parentId": "oymu@49",
+        "startTime": 43305.253,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@82",
+        "endTime": 43305.292,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@86",
+        "parentId": "oymu@49",
+        "startTime": 43309.599,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@86",
+        "endTime": 43309.679,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@89",
+        "parentId": "oymu@49",
+        "startTime": 43312.708,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@89",
+        "endTime": 43312.799,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@49",
+        "endTime": 43356.938,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m",
+          "stack": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "oymu@96",
+        "startTime": 43358.042,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@100",
+        "parentId": "oymu@96",
+        "startTime": 43362.404,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@100",
+        "endTime": 43362.472,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@101",
+        "parentId": "oymu@96",
+        "startTime": 43363.537,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@101",
+        "endTime": 44366.81,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/8b769b0b14f80a22b7775934732182cad6c2858f"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@106",
+        "parentId": "oymu@96",
+        "startTime": 44371.001,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@106",
+        "endTime": 44371.073,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "oymu@107",
+        "parentId": "oymu@96",
+        "startTime": 44371.111,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "oymu@107",
+        "endTime": 44371.151,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "oymu@96",
+        "endTime": 44375.258,
+        "annotations": []
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-736c1-rios-elementos-strict-mode--chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "xtyp@1",
+        "startTime": 12641.217,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@30",
+        "parentId": "xtyp@1",
+        "startTime": 12670.688,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@31",
+        "parentId": "xtyp@30",
+        "startTime": 12676.066,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@31",
+        "endTime": 14175.151,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@30",
+        "endTime": 14175.625,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@34",
+        "parentId": "xtyp@1",
+        "startTime": 14180.847,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@35",
+        "parentId": "xtyp@34",
+        "startTime": 14185.309,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@35",
+        "endTime": 14227.432,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@34",
+        "endTime": 14258.632,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@42",
+        "parentId": "xtyp@1",
+        "startTime": 14259.621,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@43",
+        "parentId": "xtyp@42",
+        "startTime": 14263.042,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@43",
+        "endTime": 15343.752,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@42",
+        "endTime": 15343.977,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@1",
+        "endTime": 15344.168,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@45",
+        "startTime": 15348.035,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/catalogo.html",
+        "params": {
+          "url": "/catalogo.html"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 14,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@45",
+        "endTime": 16075.203,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@47",
+        "startTime": 16093.388,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toHaveCount\"",
+        "subtitle": "getByTestId('producto')",
+        "params": {
+          "locator": "getByTestId('producto')",
+          "expected": "4"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 15,
+            "column": 48
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@47",
+        "endTime": 17089.681,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@49",
+        "startTime": 17093.012,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Click",
+        "subtitle": "getByRole('button', { name: 'Agregar al carrito' })",
+        "params": {
+          "locator": "getByRole('button', { name: 'Agregar al carrito' })"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 16,
+            "column": 68
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@49",
+        "endTime": 17227.081,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Agregar al carrito' }) resolved to 4 elements:\n    1) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Teclado mecánico$899 Agregar' }).getByRole('button')\n    2) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Mouse inalámbrico$349 Agregar' }).getByRole('button')\n    3) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Monitor 24 pulgadas$2799' }).getByRole('button')\n    4) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Audífonos USB$459 Agregar al' }).getByRole('button')\n\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Agregar al carrito' })\u001b[22m\n",
+          "stack": "Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Agregar al carrito' }) resolved to 4 elements:\n    1) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Teclado mecánico$899 Agregar' }).getByRole('button')\n    2) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Mouse inalámbrico$349 Agregar' }).getByRole('button')\n    3) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Monitor 24 pulgadas$2799' }).getByRole('button')\n    4) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Audífonos USB$459 Agregar al' }).getByRole('button')\n\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Agregar al carrito' })\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:16:68"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@51",
+        "startTime": 17228.862,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@53",
+        "parentId": "xtyp@51",
+        "startTime": 17336.848,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@53",
+        "endTime": 17337.165,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@54",
+        "parentId": "xtyp@51",
+        "startTime": 17337.611,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@61",
+        "parentId": "xtyp@54",
+        "startTime": 17492.171,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@61",
+        "endTime": 17699.076,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@54",
+        "endTime": 17707.947,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/7dfaf4cc97e93b5b009a6ee197f4b585a1dea5ee"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@69",
+        "startTime": 17719.439,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@69",
+        "endTime": 17719.463,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/c3415f72f38481cfbe5b3736f0d5c08a2c5cd285"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@72",
+        "parentId": "xtyp@51",
+        "startTime": 17721.762,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@72",
+        "endTime": 17721.829,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@73",
+        "parentId": "xtyp@51",
+        "startTime": 17721.87,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@73",
+        "endTime": 17721.912,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@75",
+        "parentId": "xtyp@51",
+        "startTime": 17722.899,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@75",
+        "endTime": 17722.964,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@77",
+        "parentId": "xtyp@51",
+        "startTime": 17723.825,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@77",
+        "endTime": 17724.042,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@84",
+        "parentId": "xtyp@51",
+        "startTime": 17728.276,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@84",
+        "endTime": 17728.333,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@88",
+        "parentId": "xtyp@51",
+        "startTime": 17730.565,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@88",
+        "endTime": 17730.6,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@91",
+        "parentId": "xtyp@51",
+        "startTime": 17731.347,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@91",
+        "endTime": 17731.37,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@51",
+        "endTime": 17735.663,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/419a0ca4dbe84018848be372701805d0fed2a18c"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@98",
+        "startTime": 17736.108,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@102",
+        "parentId": "xtyp@98",
+        "startTime": 17738.948,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@102",
+        "endTime": 17738.996,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@103",
+        "parentId": "xtyp@98",
+        "startTime": 17739.729,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@103",
+        "endTime": 17876.992,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@108",
+        "parentId": "xtyp@98",
+        "startTime": 17878.51,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@108",
+        "endTime": 17878.605,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@109",
+        "parentId": "xtyp@98",
+        "startTime": 17878.619,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@109",
+        "endTime": 17878.638,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@98",
+        "endTime": 17880.403,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@43",
+        "startTime": 14265.352,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "event",
+        "time": 15336.986,
+        "class": "BrowserContext",
+        "method": "page",
+        "params": {
+          "pageId": "page@c2f7cd70f1454e309429ae2515212a85"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@43",
+        "endTime": 15337.273,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@45",
+        "startTime": 15349.829,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/catalogo.html",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "console",
+        "messageType": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "args": [],
+        "location": {
+          "url": "http://localhost:3000/logo.png",
+          "lineNumber": 0,
+          "columnNumber": 0
+        },
+        "time": 15758.125,
+        "pageId": "page@c2f7cd70f1454e309429ae2515212a85"
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@45",
+        "endTime": 16017.196,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@47",
+        "startTime": 16100.713,
+        "title": "Expect \"toHaveCount\"",
+        "class": "Frame",
+        "method": "expect",
+        "params": {
+          "selector": "internal:testid=[data-testid=\"producto\"s]",
+          "expression": "to.have.count",
+          "expectedNumber": 4,
+          "expectedValue": {
+            "value": {
+              "v": "undefined"
+            },
+            "handles": []
+          },
+          "isNot": false,
+          "timeout": 5000
+        }
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@47",
+        "endTime": 17083.499
+      },
+      {
+        "type": "before",
+        "callId": "xtyp@49",
+        "startTime": 17094.014,
+        "class": "Frame",
+        "method": "click",
+        "params": {
+          "selector": "internal:role=button[name=\"Agregar al carrito\"i]",
+          "strict": true
+        }
+      },
+      {
+        "type": "after",
+        "callId": "xtyp@49",
+        "endTime": 17218.266,
+        "error": {
+          "message": "Error: strict mode violation: getByRole('button', { name: 'Agregar al carrito' }) resolved to 4 elements:\n    1) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Teclado mecánico$899 Agregar' }).getByRole('button')\n    2) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Mouse inalámbrico$349 Agregar' }).getByRole('button')\n    3) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Monitor 24 pulgadas$2799' }).getByRole('button')\n    4) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Audífonos USB$459 Agregar al' }).getByRole('button')\n",
+          "stack": "Error: Error: strict mode violation: getByRole('button', { name: 'Agregar al carrito' }) resolved to 4 elements:\n    1) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Teclado mecánico$899 Agregar' }).getByRole('button')\n    2) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Mouse inalámbrico$349 Agregar' }).getByRole('button')\n    3) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Monitor 24 pulgadas$2799' }).getByRole('button')\n    4) <button>Agregar al carrito</button> aka getByRole('listitem').filter({ hasText: 'Audífonos USB$459 Agregar al' }).getByRole('button')\n\n    at CRExecutionContext.evaluateWithArguments (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:36974:17)\n    at LongStandingScope._race (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:3619:18)\n    at evaluateExpression (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:20623:12)\n    at getResult (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:22084:33)\n    at FrameSelectors._callOnSelectorInternal (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:22112:16)\n    at FrameSelectors.callOnSelectorHandle (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:22132:25)\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25330:28\n    at _Frame.retryWithProgressAndTimeouts (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25301:29)\n    at _Frame.retryWithProgressAndBackoff (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25285:16)\n    at _Frame.click (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25376:27)\n    at _FrameDispatcher.click (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:56217:16)\n    at _ProgressController.run (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:13018:27)\n    at DispatcherConnection.dispatch (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:20191:27)",
+          "name": "Error"
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@c2f7cd70f1454e309429ae2515212a85",
+          "startedDateTime": "2026-10-15T23:10:19.993Z",
+          "time": 18.017,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/logo.png",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "image"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "no-cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 602,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 404,
+            "statusText": "Not Found",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:20 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 13,
+              "mimeType": "x-unknown",
+              "compression": 0,
+              "_file": "resources/9271b47f7ce27125514eeccb30beeda5cdfe71b4.dat"
+            },
+            "headersSize": 138,
+            "bodySize": 23,
+            "redirectURL": "",
+            "_transferSize": 161
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 6.875,
+            "receive": 11.142
+          },
+          "_frameref": "frame@7772e61228b8f84278ecfa7e59f5dcbd",
+          "_monotonicTime": 15750.338,
+          "_resourceType": "image",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@c2f7cd70f1454e309429ae2515212a85",
+          "startedDateTime": "2026-10-15T23:10:19.704Z",
+          "time": 156.562,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/catalogo.html",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 679,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:19 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 1583,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/9cf21b62b78561dd377083b578089ced6832c5c9.html"
+            },
+            "headersSize": 171,
+            "bodySize": 1595,
+            "redirectURL": "",
+            "_transferSize": 1766
+          },
+          "cache": {},
+          "timings": {
+            "dns": 8.986,
+            "connect": 10.474,
+            "ssl": 43.511,
+            "send": 0,
+            "wait": 47.052,
+            "receive": 46.539
+          },
+          "_frameref": "frame@7772e61228b8f84278ecfa7e59f5dcbd",
+          "_monotonicTime": 15453.173,
+          "_resourceType": "document",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@c2f7cd70f1454e309429ae2515212a85",
+          "startedDateTime": "2026-10-15T23:10:20.204Z",
+          "time": 824.1510000000001,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/api/productos",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 533,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:21 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 206,
+              "mimeType": "application/json",
+              "compression": 0,
+              "_file": "resources/f5fbb5c88ceba7521b5c73b03d7a39a85abd7b55.json"
+            },
+            "headersSize": 163,
+            "bodySize": 217,
+            "redirectURL": "",
+            "_transferSize": 380
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 820.767,
+            "receive": 3.384
+          },
+          "_frameref": "frame@7772e61228b8f84278ecfa7e59f5dcbd",
+          "_monotonicTime": 15957.599,
+          "_resourceType": "fetch",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-a28bb-ncide-Expected-vs-Received--chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "ncym@1",
+        "startTime": 19504.586,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@30",
+        "parentId": "ncym@1",
+        "startTime": 19536.558,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@31",
+        "parentId": "ncym@30",
+        "startTime": 19542.947,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@31",
+        "endTime": 20230.288,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@30",
+        "endTime": 20230.724,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@34",
+        "parentId": "ncym@1",
+        "startTime": 20235.942,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@35",
+        "parentId": "ncym@34",
+        "startTime": 20241.325,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@35",
+        "endTime": 20268.898,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@34",
+        "endTime": 20298.724,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@42",
+        "parentId": "ncym@1",
+        "startTime": 20299.943,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@43",
+        "parentId": "ncym@42",
+        "startTime": 20303.238,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@43",
+        "endTime": 20575.981,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@42",
+        "endTime": 20576.242,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@1",
+        "endTime": 20576.426,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@45",
+        "startTime": 20580.59,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/",
+        "params": {
+          "url": "/"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 20,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "ncym@45",
+        "endTime": 20715.877,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@47",
+        "startTime": 20728.304,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toHaveText\"",
+        "subtitle": "getByRole('heading', { level: 1 })",
+        "params": {
+          "locator": "getByRole('heading', { level: 1 })",
+          "expected": "Bienvenidos a TiendaUT"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 21,
+            "column": 59
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "ncym@47",
+        "endTime": 25769.454,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 1 })\nExpected: \u001b[32m\"Bienvenido\u001b[7ms\u001b[27m a TiendaUT\"\u001b[39m\nReceived: \u001b[31m\"Bienvenido a TiendaUT\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\u001b[2m    14 × locator resolved to <h1>Bienvenido a TiendaUT</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Bienvenido a TiendaUT\"\u001b[22m\n",
+          "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 1 })\nExpected: \u001b[32m\"Bienvenido\u001b[7ms\u001b[27m a TiendaUT\"\u001b[39m\nReceived: \u001b[31m\"Bienvenido a TiendaUT\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\u001b[2m    14 × locator resolved to <h1>Bienvenido a TiendaUT</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Bienvenido a TiendaUT\"\u001b[22m\n\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:21:59"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "ncym@49",
+        "startTime": 25771.521,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@51",
+        "parentId": "ncym@49",
+        "startTime": 25862.505,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@51",
+        "endTime": 25863.068,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@52",
+        "parentId": "ncym@49",
+        "startTime": 25863.944,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@58",
+        "parentId": "ncym@52",
+        "startTime": 25984.945,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@58",
+        "endTime": 26878.557,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@52",
+        "endTime": 26891.006,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/af008f18c32fbdea07fe67ed3cd4c7a1222f3408"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@66",
+        "startTime": 26902.633,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@66",
+        "endTime": 26902.663,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/2c4e9479a64323a3951724be4a156465fb7d8352"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "ncym@69",
+        "parentId": "ncym@49",
+        "startTime": 26904.835,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@69",
+        "endTime": 26904.899,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@70",
+        "parentId": "ncym@49",
+        "startTime": 26904.937,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@70",
+        "endTime": 26904.978,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@72",
+        "parentId": "ncym@49",
+        "startTime": 26905.76,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@72",
+        "endTime": 26905.806,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@74",
+        "parentId": "ncym@49",
+        "startTime": 26906.523,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@74",
+        "endTime": 26906.699,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@81",
+        "parentId": "ncym@49",
+        "startTime": 26911.783,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@81",
+        "endTime": 26911.954,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@85",
+        "parentId": "ncym@49",
+        "startTime": 26914.866,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@85",
+        "endTime": 26914.918,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@88",
+        "parentId": "ncym@49",
+        "startTime": 26916.311,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@88",
+        "endTime": 26916.353,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@49",
+        "endTime": 26921.369,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/93813ac073d2cfa7c25e4789c6e5cb5a699f6cbf"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@95",
+        "startTime": 26922.133,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@99",
+        "parentId": "ncym@95",
+        "startTime": 26925.452,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@99",
+        "endTime": 26925.498,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@100",
+        "parentId": "ncym@95",
+        "startTime": 26926.454,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@100",
+        "endTime": 27109.1,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@105",
+        "parentId": "ncym@95",
+        "startTime": 27111.628,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@105",
+        "endTime": 27111.678,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@106",
+        "parentId": "ncym@95",
+        "startTime": 27111.696,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "ncym@106",
+        "endTime": 27111.728,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "ncym@95",
+        "endTime": 27115.249,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "ncym@43",
+        "startTime": 20305.569,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "event",
+        "time": 20570.31,
+        "class": "BrowserContext",
+        "method": "page",
+        "params": {
+          "pageId": "page@73895f469793847331c3ef8de3b062b0"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "ncym@43",
+        "endTime": 20570.696,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "ncym@45",
+        "startTime": 20582.216,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "ncym@45",
+        "endTime": 20658.305,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "ncym@47",
+        "startTime": 20733.758,
+        "title": "Expect \"toHaveText\"",
+        "class": "Frame",
+        "method": "expect",
+        "params": {
+          "selector": "internal:role=heading[level=1]",
+          "expression": "to.have.text",
+          "expectedText": [
+            {
+              "string": "Bienvenidos a TiendaUT",
+              "normalizeWhiteSpace": true
+            }
+          ],
+          "expectedValue": {
+            "value": {
+              "v": "undefined"
+            },
+            "handles": []
+          },
+          "isNot": false,
+          "timeout": 5000
+        }
+      },
+      {
+        "type": "after",
+        "callId": "ncym@47",
+        "endTime": 25752.554,
+        "error": {
+          "message": "Expect failed",
+          "stack": "ExpectError: Expect failed\n    at _Frame.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:25606:17)\n    at _FrameDispatcher.expect (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:56333:11)\n    at _ProgressController.run (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:13018:27)\n    at DispatcherConnection.dispatch (C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:20191:27)",
+          "name": "ExpectError"
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@73895f469793847331c3ef8de3b062b0",
+          "startedDateTime": "2026-10-15T23:10:24.853Z",
+          "time": 34.514,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 666,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:24 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 303,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/c8b57b9dbcc1c2a1297489f72d54a55eaff0fa2a.html"
+            },
+            "headersSize": 171,
+            "bodySize": 315,
+            "redirectURL": "",
+            "_transferSize": 486
+          },
+          "cache": {},
+          "timings": {
+            "dns": 4.489,
+            "connect": 1.638,
+            "ssl": 7.638,
+            "send": 0,
+            "wait": 17.988,
+            "receive": 2.761
+          },
+          "_frameref": "frame@bfab862c4fd8c0abe40f7ac54d6dcd8c",
+          "_monotonicTime": 20602.181,
+          "_resourceType": "document",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  },
+  {
+    "trace": "evidencias/laboratorio-original/resultados/errores-intencionales-Labo-ac35d-anza-un-error-de-JavaScript-chromium/trace.zip",
+    "events": [
+      {
+        "type": "before",
+        "callId": "fwvl@1",
+        "startTime": 40166.583,
+        "class": "Test",
+        "method": "hook",
+        "title": "Before Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@30",
+        "parentId": "fwvl@1",
+        "startTime": 40228.09,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@31",
+        "parentId": "fwvl@30",
+        "startTime": 40236.113,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Launch browser",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@31",
+        "endTime": 41003.735,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@30",
+        "endTime": 41004.152,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@34",
+        "parentId": "fwvl@1",
+        "startTime": 41009.861,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@35",
+        "parentId": "fwvl@34",
+        "startTime": 41014.659,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@35",
+        "endTime": 41037.649,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@34",
+        "endTime": 41063.502,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@42",
+        "parentId": "fwvl@1",
+        "startTime": 41064.782,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@43",
+        "parentId": "fwvl@42",
+        "startTime": 41071.082,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Create page",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@43",
+        "endTime": 41576.916,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@42",
+        "endTime": 41577.08,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@1",
+        "endTime": 41577.252,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@45",
+        "startTime": 41580.694,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Navigate",
+        "subtitle": "/catalogo.html",
+        "params": {
+          "url": "/catalogo.html"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 40,
+            "column": 16
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@45",
+        "endTime": 41811.287,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@47",
+        "startTime": 41822.721,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Click",
+        "subtitle": "getByRole('button', { name: 'Vaciar carrito' })",
+        "params": {
+          "locator": "getByRole('button', { name: 'Vaciar carrito' })"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 41,
+            "column": 64
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@47",
+        "endTime": 42352.817,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@49",
+        "startTime": 42362.763,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toEqual\"",
+        "params": {
+          "expected": "[]"
+        },
+        "stack": [
+          {
+            "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts",
+            "line": 43,
+            "column": 21
+          }
+        ]
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@49",
+        "endTime": 42379.635,
+        "annotations": [],
+        "error": {
+          "name": "",
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"reiniciarContador is not defined\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+          "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"reiniciarContador is not defined\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\tests\\errores-intencionales.spec.ts:43:21"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@50",
+        "startTime": 42381.777,
+        "class": "Test",
+        "method": "hook",
+        "title": "After Hooks",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@52",
+        "parentId": "fwvl@50",
+        "startTime": 42576.895,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"page\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@52",
+        "endTime": 42577.629,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@53",
+        "parentId": "fwvl@50",
+        "startTime": 42578.754,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@60",
+        "parentId": "fwvl@53",
+        "startTime": 43462.33,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Close context",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@60",
+        "endTime": 43855.945,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@53",
+        "endTime": 43865.291,
+        "attachments": [
+          {
+            "name": "video",
+            "contentType": "video/webm",
+            "file": "attachments/50fe72ed952a81e0f4f462cb0d8735a07ef57efb"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@68",
+        "startTime": 43880.256,
+        "class": "Test",
+        "method": "test.attach",
+        "title": "Attach \"error-context\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@68",
+        "endTime": 43880.29,
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "file": "attachments/61fca7b05bcbcf85a2adcd64a59bda5e5361e6b9"
+          }
+        ]
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@71",
+        "parentId": "fwvl@50",
+        "startTime": 43884.115,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"baseURL\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@71",
+        "endTime": 43884.188,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@72",
+        "parentId": "fwvl@50",
+        "startTime": 43884.228,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"userAgent\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@72",
+        "endTime": 43884.285,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@74",
+        "parentId": "fwvl@50",
+        "startTime": 43885.368,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"viewport\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@74",
+        "endTime": 43885.431,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@76",
+        "parentId": "fwvl@50",
+        "startTime": 43886.507,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screen\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@76",
+        "endTime": 43886.764,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@83",
+        "parentId": "fwvl@50",
+        "startTime": 43895.729,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"isMobile\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@83",
+        "endTime": 43896.023,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@87",
+        "parentId": "fwvl@50",
+        "startTime": 43899.408,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"hasTouch\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@87",
+        "endTime": 43899.49,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@90",
+        "parentId": "fwvl@50",
+        "startTime": 43901.543,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"deviceScaleFactor\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@90",
+        "endTime": 43901.618,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@50",
+        "endTime": 43910.527,
+        "attachments": [
+          {
+            "name": "screenshot",
+            "contentType": "image/png",
+            "file": "attachments/b0415b013a89954bf939b279826a070d4e96d126"
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@97",
+        "startTime": 43912.214,
+        "class": "Test",
+        "method": "hook",
+        "title": "Worker Cleanup",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@101",
+        "parentId": "fwvl@97",
+        "startTime": 43918.613,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"video\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@101",
+        "endTime": 43918.689,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@102",
+        "parentId": "fwvl@97",
+        "startTime": 43919.94,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"browser\"",
+        "params": {},
+        "stack": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@102",
+        "endTime": 44723.671,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@107",
+        "parentId": "fwvl@97",
+        "startTime": 44726.254,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"defaultBrowserType\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@107",
+        "endTime": 44726.305,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@108",
+        "parentId": "fwvl@97",
+        "startTime": 44726.325,
+        "class": "Test",
+        "method": "fixture",
+        "title": "Fixture \"screenshot\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "project#chromium",
+            "line": 1,
+            "column": 1
+          }
+        ],
+        "group": "configuration"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@108",
+        "endTime": 44726.355,
+        "annotations": []
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@97",
+        "endTime": 44730.636,
+        "annotations": []
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@43",
+        "startTime": 41073.093,
+        "class": "BrowserContext",
+        "method": "newPage",
+        "params": {}
+      },
+      {
+        "type": "event",
+        "time": 41570.992,
+        "class": "BrowserContext",
+        "method": "page",
+        "params": {
+          "pageId": "page@1f924ff4d05318e004d1a933c19cb690"
+        }
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@43",
+        "endTime": 41571.356,
+        "result": {
+          "page": "<Page>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@45",
+        "startTime": 41582.296,
+        "class": "Frame",
+        "method": "goto",
+        "params": {
+          "url": "/catalogo.html",
+          "waitUntil": "load"
+        }
+      },
+      {
+        "type": "console",
+        "messageType": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "args": [],
+        "location": {
+          "url": "http://localhost:3000/logo.png",
+          "lineNumber": 0,
+          "columnNumber": 0
+        },
+        "time": 41754.743,
+        "pageId": "page@1f924ff4d05318e004d1a933c19cb690"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@45",
+        "endTime": 41796.229,
+        "result": {
+          "response": "<Response>"
+        }
+      },
+      {
+        "type": "before",
+        "callId": "fwvl@47",
+        "startTime": 41823.627,
+        "class": "Frame",
+        "method": "click",
+        "params": {
+          "selector": "internal:role=button[name=\"Vaciar carrito\"i]",
+          "strict": true
+        }
+      },
+      {
+        "type": "event",
+        "time": 42292.265,
+        "class": "BrowserContext",
+        "method": "pageError",
+        "params": {
+          "error": {
+            "error": {
+              "message": "reiniciarContador is not defined",
+              "stack": "ReferenceError: reiniciarContador is not defined\n    at HTMLButtonElement.<anonymous> (http://localhost:3000/catalogo.html:40:7)",
+              "name": "ReferenceError"
+            }
+          },
+          "location": {
+            "url": "http://localhost:3000/catalogo.html",
+            "line": 39,
+            "column": 6
+          }
+        },
+        "pageId": "page@1f924ff4d05318e004d1a933c19cb690"
+      },
+      {
+        "type": "after",
+        "callId": "fwvl@47",
+        "endTime": 42343.227
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@1f924ff4d05318e004d1a933c19cb690",
+          "startedDateTime": "2026-10-15T23:10:45.871Z",
+          "time": 62.488,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/catalogo.html",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "name": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "name": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 679,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:45 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 1583,
+              "mimeType": "text/html; charset=utf-8",
+              "compression": 0,
+              "_file": "resources/9cf21b62b78561dd377083b578089ced6832c5c9.html"
+            },
+            "headersSize": 171,
+            "bodySize": 1595,
+            "redirectURL": "",
+            "_transferSize": 1766
+          },
+          "cache": {},
+          "timings": {
+            "dns": 4.723,
+            "connect": 12.125,
+            "ssl": 18.805,
+            "send": 0,
+            "wait": 22.805,
+            "receive": 4.03
+          },
+          "_frameref": "frame@8c0d5813eb31ad21090ea36ac6f4cb9a",
+          "_monotonicTime": 41625.099,
+          "_resourceType": "document",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@1f924ff4d05318e004d1a933c19cb690",
+          "startedDateTime": "2026-10-15T23:10:45.931Z",
+          "time": 58.125,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/logo.png",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "image"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "no-cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 602,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 404,
+            "statusText": "Not Found",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:45 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 13,
+              "mimeType": "x-unknown",
+              "compression": 0,
+              "_file": "resources/9271b47f7ce27125514eeccb30beeda5cdfe71b4.dat"
+            },
+            "headersSize": 138,
+            "bodySize": 23,
+            "redirectURL": "",
+            "_transferSize": 161
+          },
+          "cache": {},
+          "timings": {
+            "dns": -1,
+            "connect": -1,
+            "ssl": -1,
+            "send": 0,
+            "wait": 55.29,
+            "receive": 2.835
+          },
+          "_frameref": "frame@8c0d5813eb31ad21090ea36ac6f4cb9a",
+          "_monotonicTime": 41720.713,
+          "_resourceType": "image",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      },
+      {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@1f924ff4d05318e004d1a933c19cb690",
+          "startedDateTime": "2026-10-15T23:10:45.942Z",
+          "time": 872.0590000000001,
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/api/productos",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Host",
+                "value": "localhost:3000"
+              },
+              {
+                "name": "Referer",
+                "value": "http://localhost:3000/catalogo.html"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-origin"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "queryString": [],
+            "headersSize": 533,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 15 Oct 2026 23:10:46 GMT"
+              },
+              {
+                "name": "Keep-Alive",
+                "value": "timeout=5"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              }
+            ],
+            "content": {
+              "size": 206,
+              "mimeType": "application/json",
+              "compression": 0,
+              "_file": "resources/f5fbb5c88ceba7521b5c73b03d7a39a85abd7b55.json"
+            },
+            "headersSize": 163,
+            "bodySize": 217,
+            "redirectURL": "",
+            "_transferSize": 380
+          },
+          "cache": {},
+          "timings": {
+            "dns": 0.021,
+            "connect": 1.468,
+            "ssl": 2.708,
+            "send": 0,
+            "wait": 832.171,
+            "receive": 35.691
+          },
+          "_frameref": "frame@8c0d5813eb31ad21090ea36ac6f4cb9a",
+          "_monotonicTime": 41721.487,
+          "_resourceType": "fetch",
+          "serverIPAddress": "[::1]",
+          "_serverPort": 3000,
+          "_securityDetails": {}
+        }
+      }
+    ]
+  }
+]

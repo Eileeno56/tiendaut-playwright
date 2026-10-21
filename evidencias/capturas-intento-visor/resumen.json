@@ -1,0 +1,533 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.evidencias.config.ts"
+    ],
+    "configFile": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\playwright.evidencias.config.ts",
+    "rootDir": "C:/Users/user/Documents/labra/tiendaut-playwright/evidencias/capturas",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/user/Documents/labra/tiendaut-playwright/evidencias/capturas/resultados",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/user/Documents/labra/tiendaut-playwright/evidencias/capturas",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas",
+        "snapshotDir": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://localhost:3000",
+          "trace": "on",
+          "screenshot": "on",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "evidencias/capturas/reporte",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidencias/capturas/resumen.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node server.js",
+      "url": "http://localhost:3000",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "documentacion.spec.ts",
+      "file": "documentacion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "evidencia: agregar y vaciar sin errores JavaScript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:05:47.655Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "errores-javascript.json",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-ag-3c168-ciar-sin-errores-JavaScript-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-ag-3c168-ciar-sin-errores-JavaScript-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-4bec4c51beff239d113a",
+          "file": "documentacion.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "evidencia: filtrar antes de recibir productos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:05:50.415Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-filtrar-antes-de-recibir-productos-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-filtrar-antes-de-recibir-productos-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-2ef0ccd5bbc733418e01",
+          "file": "documentacion.spec.ts",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "evidencia: login vacío presenta alerta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 475,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:05:51.776Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-login-vacío-presenta-alerta-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-login-vacío-presenta-alerta-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-fba48e1f0a253f461b1b",
+          "file": "documentacion.spec.ts",
+          "line": 38,
+          "column": 5
+        },
+        {
+          "title": "evidencia: contrato real de productos",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 62403,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\documentacion.spec.ts",
+                        "column": 36,
+                        "line": 55
+                      },
+                      "message": "Error: locator.check: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox')\u001b[22m\n\n\n  53 |     expect(producto.precio).toBeGreaterThan(0);\n  54 |   }\n> 55 |   await page.getByRole('checkbox').check();\n     |                                    ^\n  56 |   await page.screenshot({ path: path.join(carpeta, '05-api-productos.png'), clip: { x: 0, y: 0, width: 800, height: 600 } });\n  57 |   await testInfo.attach('productos.json', { body: JSON.stringify(productos, null, 2), contentType: 'application/json' });\n  58 | });\n    at C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\documentacion.spec.ts:55:36"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:05:52.314Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-contrato-real-de-productos-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-contrato-real-de-productos-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-contrato-real-de-productos-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-contrato-real-de-productos-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-1b11586b61867cf68827",
+          "file": "documentacion.spec.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "evidencia: API 500 presenta aviso",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 406,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:06:55.705Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-API-500-presenta-aviso-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-API-500-presenta-aviso-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-b5155f5fb7ef7a7ea1c5",
+          "file": "documentacion.spec.ts",
+          "line": 60,
+          "column": 5
+        },
+        {
+          "title": "evidencia: consola, red y accesibilidad del catálogo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:06:56.419Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "calidad.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjb25zb2xhIjogW10sCiAgInJlZCI6IFtdLAogICJ2aW9sYWNpb25lcyI6IFtdLAogICJyZWdsYXNDb21wcm9iYWRhcyI6IDI0Cn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-co-4ac45--accesibilidad-del-catálogo-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-co-4ac45--accesibilidad-del-catálogo-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-5059a0854a1dfff958b0",
+          "file": "documentacion.spec.ts",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "title": "evidencia: recorrido completo de acceso",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1806,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:06:58.895Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-recorrido-completo-de-acceso-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-recorrido-completo-de-acceso-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-21813d14b5003cdb9d27",
+          "file": "documentacion.spec.ts",
+          "line": 86,
+          "column": 5
+        },
+        {
+          "title": "evidencia: recorrido completo del carrito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1624,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T02:07:00.785Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-recorrido-completo-del-carrito-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\user\\Documents\\labra\\tiendaut-playwright\\evidencias\\capturas\\resultados\\documentacion-evidencia-recorrido-completo-del-carrito-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6269cec66f6916d919f8-c2dfe6b10328f9d71504",
+          "file": "documentacion.spec.ts",
+          "line": 101,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T02:05:46.588Z",
+    "duration": 76342.83,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
