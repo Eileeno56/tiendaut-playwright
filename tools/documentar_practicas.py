@@ -83,12 +83,12 @@ def build(name):
 
 def evidencia_github():
  page();title('GitHub: ejecución y artefacto verificados')
- img('18-github-linux.png','Reporte HTML real descargado del artefacto de GitHub Actions en Ubuntu Linux. Esta imagen corresponde al reporte de Playwright, no a una pantalla simulada del sitio GitHub.',475)
+ img('19-github-actions.jpg','Captura real de la página pública de GitHub Actions: estado Success y un artefacto publicado. El reporte de Playwright descargado y la segunda ejecución estricta también están incluidos en las evidencias.',360)
  sub('Ejecución del 21 de octubre de 2026')
  table([['Comprobación remota','Resultado'],['Instalación y ESLint','Correctos'],['Chromium / Firefox / WebKit','115 / 115 en cada navegador'],['Total / fallos / flaky / saltos','345 / 0 / 0 / 0'],['Artefacto playwright-report','Publicado y descargado; JSON y logs comprobados']],[220,255])
  p('Repositorio: https://github.com/Eileeno56/tiendaut-playwright','Small')
  p('Ejecución: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242','Small')
- p('La verificación y los adjuntos están en evidencias/github/. El repositorio es privado: el docente necesita acceso para abrirlo. No se activó protección de rama porque GitHub exige Pro o visibilidad pública para esa función; respuesta HTTP 403 conservada en verificacion.json.','Small')
+ p('La verificación y los adjuntos están en evidencias/github/. El repositorio es público y el docente puede abrirlo sin invitación. Main exige el check test. La segunda ejecución también pasó 345/345 sin actualizar referencias: actions/runs/39696522338. El bloqueo inicial del plan privado queda registrado como antecedente, no como estado actual.','Small')
 
 p('GESTIÓN DEL PROCESO DE DESARROLLO DE SOFTWARE','Sub')
 p('Práctica 1','Cover');title('Cazadores de defectos en TiendaUT')
@@ -137,7 +137,7 @@ sub('Calidad comprobada')
 p('La captura del catálogo auditado y el adjunto calidad.json acreditan consola sin errores, ninguna respuesta de red >=400 en el camino normal y cero violaciones axe en el catálogo. El caso 500 se valida por separado porque su error de red es intencional.')
 sub('GitHub Actions: verificado en verde')
 p('El 21 de octubre se publicó el repositorio Eileeno56/tiendaut-playwright y se ejecutó el workflow en Ubuntu. Instalación, ESLint, 345 pruebas y publicación de artefactos terminaron correctamente. Se descargó playwright-report y se comprobaron sus resultados, logs y referencias visuales Linux.')
-p('La primera ejecución Linux creó las referencias ausentes; se revisaron y se incorporaron al código. El workflow ahora exige comparar sin regenerarlas. La protección de rama no pudo activarse: GitHub devuelve 403 y exige Pro o hacer público el repositorio; se mantiene privado. Ver la evidencia remota en la página siguiente.','Small')
+p('La primera ejecución Linux creó las referencias ausentes; se revisaron y se incorporaron al código. El workflow ahora exige comparar sin regenerarlas. Con autorización del estudiante, el repositorio se hizo público y se activó la protección de main, que exige el check test. Se fija Ubuntu 24.04 para mantener estable el entorno de las capturas. Ver la evidencia remota en la página siguiente.','Small')
 evidencia_github()
 build('practica-1-con-evidencias.pdf')
 
@@ -197,7 +197,7 @@ p('Chromium 115/115; Firefox 115/115; WebKit 115/115. Cero fallos, flaky o salto
 sub('Reproducir y consultar')
 code('npm ci\nnpx playwright install\nnpm run lint\nnpm run test:estabilidad\nnpx playwright test --config=playwright.evidencias.config.ts')
 sub('Integración continua comprobada')
-p('El repositorio ya está publicado y GitHub Actions terminó en verde con npm ci, lint y 345 pruebas. Se publicó y descargó el artefacto playwright-report. La captura de la página siguiente proviene de ese reporte remoto real. La protección de rama está limitada por el plan de GitHub para repositorios privados; no se declara activada.')
+p('El repositorio ya está publicado y GitHub Actions terminó en verde con npm ci, lint y 345 pruebas. Se publicó y descargó el artefacto playwright-report. La captura de la página siguiente muestra GitHub Actions con estado Success. El repositorio es público y main exige el check test para integrar cambios.')
 if not scope['confirmado'] and not scope.get('asumido_por_zip'):p('También falta confirmar que TiendaUT corresponde al mini-proyecto del equipo. El código y las capturas prueban trabajo real sobre esta aplicación; no prueban que se haya trabajado en un proyecto distinto que no se proporcionó.','Small')
 evidencia_github()
 build('practica-2-con-evidencias.pdf')

@@ -179,3 +179,8 @@ Laboratorio original: 8 fallos previstos. Suite original aislada con las tres pr
 ## Verificación remota - 21 de octubre de 2026
 
 GitHub Actions pasó 345/345; instalación, lint y subida de artefacto terminaron correctamente. Reporte y logs descargados en evidencias/github. La protección de main devolvió 403 por el plan del repositorio privado; no se declara activada. Las referencias Linux se revisaron y se incorporaron para comparaciones estrictas posteriores.
+
+
+## Publicación y protección autorizadas
+
+El estudiante autorizó hacer público el repositorio para el docente. Se activó la protección de main que exige test. La segunda ejecución estricta, 39696522338, pasó 345/345 sin regenerar referencias; reporte descargado en github/comparacion-estricta. El 403 del plan privado es un antecedente ya resuelto.

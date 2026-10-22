@@ -17,8 +17,26 @@
   },
   "fecha_verificacion": "2026-10-21",
   "proteccion_rama": {
-    "activada": false,
-    "http": 403,
-    "motivo": "Upgrade to GitHub Pro or make this repository public to enable this feature."
+    "activada": true,
+    "strict": true,
+    "contextos": [
+      "test"
+    ],
+    "antecedente": "El plan privado devolvió 403; se activó después de la autorización del estudiante para hacer público el repositorio."
+  },
+  "publico": true,
+  "segunda_ejecucion": {
+    "url": "https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39696522338",
+    "conclusion": "success",
+    "artifact_id": 12391695363,
+    "stats": {
+      "startTime": "2026-10-21T23:56:42.886Z",
+      "duration": 253662.136,
+      "expected": 345,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "actualiza_referencias": false
   }
 }

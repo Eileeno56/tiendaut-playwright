@@ -46,9 +46,9 @@ npx playwright show-report evidencias/capturas/reporte
 
 `npm run test:laboratorio` conserva E1-E8 como ejemplos didácticos separados de la aceptación. Después de corregir el sitio, E6 y E8 pueden pasar. Los ocho fallos originales y sus capturas/trazas se conservaron antes de cambiar el sitio. `npx eslint tests/ --no-ignore` muestra el await deliberadamente ausente en E7.
 
-## Requisitos externos pendientes
+## Alcance y entrega
 
-GitHub ya está verificado: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242 terminó en verde con 345/345. El artefacto se publicó, descargó y verificó; evidencia en evidencias/github y documentacion/GITHUB.md. Repositorio privado: https://github.com/Eileeno56/tiendaut-playwright. El docente necesita acceso. La protección de rama no pudo activarse por la limitación del plan (HTTP 403).
+GitHub ya está verificado: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39695106242 terminó en verde con 345/345. El artefacto se publicó, descargó y verificó; evidencia en evidencias/github y documentacion/GITHUB.md. Repositorio público: https://github.com/Eileeno56/tiendaut-playwright. El docente puede abrir el enlace. Main exige el check test. La segunda ejecución también pasó 345/345 sin regenerar referencias: https://github.com/Eileeno56/tiendaut-playwright/actions/runs/39696522338.
 
 La guía exige un mini-proyecto del equipo para la Práctica 2. Solo se recibió TiendaUT: la Práctica 2 se aplica y documenta sobre este proyecto. Si el profesor exige otro sistema del equipo, deberá aplicarse a ese sistema. La Práctica 3 pide un sistema integrador y requisitos del cliente que no se proporcionaron; no se declara realizada y no es una de las dos prácticas documentadas.
 

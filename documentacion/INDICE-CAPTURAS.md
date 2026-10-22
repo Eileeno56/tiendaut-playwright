@@ -22,3 +22,5 @@ Cada PNG proviene del navegador o de un reporte HTML generado por Playwright. Lo
 | 16-carrito-flujo-final | [PNG](../evidencias/capturas/imagenes/16-carrito-flujo-final.png) | 91c9d77f85cf0e2951c82745c5bf34706bfb8f926a6abc3a432b3ce528792ba1 |
 | 17-estabilidad-345 | [PNG](../evidencias/capturas/imagenes/17-estabilidad-345.png) | 755a573e0d30c7b4e3d7215003bfdb5576af60e3df9cb08663f4bddda577c0c2 |
 | 18-github-linux | [PNG](../evidencias/capturas/imagenes/18-github-linux.png) | 5b5b86ed1bb5412b395e47d0865d5bc45904215dbef028cdd0ab097b1db16a40 |
+
+| 19-github-actions | [JPEG real de GitHub](../evidencias/capturas/imagenes/19-github-actions.jpg) | Estado Success y artefacto |

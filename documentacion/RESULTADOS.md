@@ -1,4 +1,4 @@
-> Actualización del 21 de octubre de 2026: el repositorio ya está publicado, Actions pasó 345/345 y el artefacto se descargó. Ver [GITHUB.md](GITHUB.md). Las menciones de GitHub pendiente más abajo corresponden al estado de la entrega inicial. La protección de rama sigue limitada por el plan privado.
+> Actualización del 21 de octubre de 2026: el repositorio ya está publicado, Actions pasó 345/345 y el artefacto se descargó. Ver [GITHUB.md](GITHUB.md). Las menciones de GitHub pendiente más abajo corresponden al estado de la entrega inicial. Después de la autorización del estudiante, el repositorio es público y main exige el check test; la limitación del plan privado se resolvió.
 
 # Resultados comprobados
 

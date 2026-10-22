@@ -88,5 +88,10 @@
     "archivo": "evidencias/capturas/imagenes/18-github-linux.png",
     "sha256": "5b5b86ed1bb5412b395e47d0865d5bc45904215dbef028cdd0ab097b1db16a40",
     "bytes": 129069
+  },
+  {
+    "archivo": "evidencias/capturas/imagenes/19-github-actions.jpg",
+    "sha256": "aaffe6b12ec38ddd34a359afd2fedb6c9c0ddd254312685e27212b47ddb13485",
+    "bytes": 24064
   }
 ]
